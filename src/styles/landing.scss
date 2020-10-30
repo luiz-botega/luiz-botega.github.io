@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,regular,medium,semi-bold,bold,extra-bold,black|Stylish");
+
+$primary-font: "Montserrat", sans-serif !important;
+$secondary-font: "Stylish", serif;
+
+$white: #fff;
+$dark: #01260b;
+$green: #3d662a;
+$moss: #96a478;
+$light-green: #cbd2bc;
+$bege: #f0ebc2;
+$yellow: #c2ad0a;
+
+$shadow-small: 0px 2px 8px rgba(1, 38, 11, 0.2),
+  0px 4px 10px rgba(1, 38, 11, 0.1);
+
+$shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
+  0px 4px 40px 5px rgba(1, 38, 11, 0.15);
+
+body::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+body {
+  font: 100% $primary-font;
+  background-color: $green !important;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.landing-bkgr {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: $white;
+}
+
+.row {
+  margin-left: 20vw !important;
+  margin-right: 15vw !important;
+}
+
+.col-7,
+.col-12 {
+  padding: 0px !important;
+}
+
+// landing screen
+
+.name-written {
+  position: absolute;
+  z-index: 5;
+  top: 35vh;
+  div {
+    display: block;
+    position: relative;
+    white-space: nowrap;
+  }
+}
+.name-stroke {
+  position: absolute !important;
+  z-index: 2;
+  img {
+    height: 260px;
+    width: 75vw;
+    min-width: 850px;
+    position: absolute;
+    top: 30vh;
+    left: -13vw;
+  }
+}
+
+.name-title {
+  font-family: $secondary-font;
+  color: $dark;
+  font-size: 120px;
+  line-height: 100px;
+  z-index: 7;
+}
+
+.name-subtitle {
+  font-family: $primary-font;
+  color: $white;
+  font-size: 50px;
+  line-height: 35px;
+  font-weight: 500;
+  letter-spacing: 9px;
+  z-index: 6;
+}
+
+.landing-leaf-box {
+  z-index: 0;
+  transform: rotate(15deg);
+  position: absolute;
+  right: 5vw;
+  top: -150px;
+  :after {
+    z-index: 0;
+  }
+}
+
+// contacts
+
+.lading-bottom-box {
+  margin-top: 580px;
+
+  > div {
+    display: flex;
+  }
+}
+
+.contact-button {
+  div {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: $green;
+    border-radius: 4px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    &:hover {
+      -moz-box-shadow: $shadow-small;
+      -webkit-box-shadow: $shadow-small;
+      box-shadow: $shadow-small;
+      transform: scale(1.05);
+      transition: 0.3s;
+      transition-timing-function: ease-in-out;
+    }
+    svg {
+      width: 28px;
+      height: 28px;
+      fill: $white;
+    }
+  }
+}
+
+.phrase-box {
+  margin-top: 48px;
+  text-align: center;
+  border: 2px solid $moss;
+  border-radius: 16px;
+  padding: 32px 24px 24px 24px;
+  color: $moss;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.quotation {
+  position: absolute;
+  margin-top: 24px;
+  font-size: 60px;
+  font-weight: 900;
+  text-shadow: 2px 0 0 $moss, -2px 0 0 $moss, 0 2px 0 $moss, 0 -2px 0 $moss,
+    1px 1px $moss, -1px -1px 0 $moss, 1px -1px 0 $moss, -1px 1px 0 $moss;
+  color: $white;
+}

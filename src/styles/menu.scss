@@ -1,0 +1,53 @@
+$primary-font: "Montserrat", sans-serif !important;
+$secondary-font: "Stylish", serif;
+
+$white: #fff;
+$dark: #01260b;
+$green: #3d662a;
+$moss: #96a478;
+$light-green: #cbd2bc;
+$bege: #f0ebc2;
+$yellow: #c2ad0a;
+
+$shadow-small: 0px 2px 8px rgba(1, 38, 11, 0.2),
+  0px 4px 10px rgba(1, 38, 11, 0.1);
+
+$shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
+  0px 4px 40px 5px rgba(1, 38, 11, 0.15);
+
+// menu
+
+.flex-column {
+  justify-content: center;
+  border-right: 2px solid $green;
+  background-color: $white;
+  height: 100vh;
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  top: 0;
+}
+
+.nav-item-box {
+  width: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+  cursor: pointer;
+  &:hover {
+    padding-left: 16px;
+    transition: 0.2s;
+  }
+}
+
+.nav-link {
+  margin: 32px 16px !important;
+  padding: 0px !important;
+  writing-mode: vertical-rl;
+  transform: scale(-1);
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 300;
+  color: $green !important;
+}
