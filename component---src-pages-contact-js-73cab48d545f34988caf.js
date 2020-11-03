@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{"Cuy+":function(e,n,t){"use strict";t.r(n),t.d(n,"default",(function(){return r}));var a=t("q1tI"),u=t.n(a),l=(t("Wbzz"),t("jYam"));function r(){return u.a.createElement("div",{style:{color:"teal"}},u.a.createElement(l.a,null),u.a.createElement("p",null,"Send us a message!"))}}}]);
+//# sourceMappingURL=component---src-pages-contact-js-73cab48d545f34988caf.js.map
