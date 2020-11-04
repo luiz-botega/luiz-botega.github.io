@@ -23,9 +23,10 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
   background-color: $white;
   height: 100vh;
   position: fixed;
-  z-index: 5;
+  z-index: 10;
   left: 0;
   top: 0;
+  padding-top: 60px;
 }
 
 .nav-item-box {
@@ -50,4 +51,77 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
   line-height: 24px;
   font-weight: 300;
   color: $green !important;
+}
+
+.brand-div {
+  position: absolute;
+  top: 16px;
+  z-index: 10;
+  transition: 1s;
+  display: flex;
+  &.appear {
+    left: 0px;
+  }
+  &.hide {
+    left: -300px;
+  }
+}
+
+.brand-box {
+  border: 2px solid $green;
+  border-left: none;
+  background-color: $white;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 2;
+  div {
+    margin: 0px 34px;
+    display: block;
+    position: relative;
+  }
+  .brand-title {
+    font-family: $secondary-font;
+    font-size: 40px;
+    line-height: 48px;
+    color: $green;
+  }
+  .brand-subtitle {
+    font-size: 16px;
+    line-height: 20px;
+    color: $green;
+    margin-bottom: 6px;
+    letter-spacing: 3px;
+    margin-top: -6px;
+  }
+}
+
+.brand-leaf-box {
+  position: absolute;
+  top: 50px;
+  transition: 0.5s;
+  left: 95px;
+  z-index: 1;
+  .brand-leaf {
+    height: 135px;
+  }
+  &.appear {
+    transition-delay: 1s;
+
+    -webkit-transform: scale(-1, 1) rotate(60deg);
+    transform: scale(-1, 1) rotate(60deg);
+    -webkit-transform-origin: center top;
+    -moz-transform-origin: center top;
+    -ms-transform-origin: center top;
+    -o-transform-origin: center top;
+    transform-origin: center top;
+  }
+  &.hide {
+    -webkit-transform: scale(-0.7, 0.7) rotate(100deg);
+    transform: scale(-0.7, 0.7) rotate(100deg);
+    -webkit-transform-origin: center top;
+    -moz-transform-origin: center top;
+    -ms-transform-origin: center top;
+    -o-transform-origin: center top;
+    transform-origin: center top;
+  }
 }

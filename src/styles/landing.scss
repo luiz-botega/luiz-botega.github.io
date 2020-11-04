@@ -23,7 +23,7 @@ body::-webkit-scrollbar {
 
 body {
   font: 100% $primary-font;
-  background-color: $green !important;
+  background-color: $moss !important;
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */
 }
@@ -32,7 +32,6 @@ body {
   position: relative;
   top: 0;
   left: 0;
-  height: 100vh;
   width: 100vw;
   background-color: $white;
 }
@@ -42,7 +41,9 @@ body {
   margin-right: 15vw !important;
 }
 
+.col-1,
 .col-7,
+.col-8,
 .col-12 {
   padding: 0px !important;
 }
@@ -52,7 +53,7 @@ body {
 .name-written {
   position: absolute;
   z-index: 5;
-  top: 35vh;
+  top: 30vh;
   div {
     display: block;
     position: relative;
@@ -69,6 +70,7 @@ body {
     position: absolute;
     top: 30vh;
     left: -13vw;
+    margin-top: -55px;
   }
 }
 
@@ -90,12 +92,32 @@ body {
   z-index: 6;
 }
 
+.snippet {
+  line-height: 32px;
+  margin-top: 72px;
+  padding-left: 16px;
+  border-left: 2px solid $yellow;
+  p {
+    font-size: 18px;
+    font-weight: 300;
+    position: relative;
+    z-index: 1;
+    display: inline;
+    white-space: normal !important;
+    background-color: #fff;
+    color: $dark;
+  }
+  span {
+    font-weight: 500;
+  }
+}
+
 .landing-leaf-box {
   z-index: 0;
   transform: rotate(15deg);
   position: absolute;
   right: 5vw;
-  top: -150px;
+  top: -200px;
   :after {
     z-index: 0;
   }
@@ -104,25 +126,28 @@ body {
 // contacts
 
 .lading-bottom-box {
-  margin-top: 580px;
-
+  margin-top: 40vh;
   > div {
     display: flex;
+    justify-content: space-around;
   }
 }
 
 .contact-button {
+  margin: 0px 8px;
   div {
     display: flex;
     width: 40px;
     height: 40px;
-    background-color: $green;
+    background-color: $white;
+    border: 2px solid $green;
     border-radius: 4px;
     margin: auto;
     align-items: center;
     justify-content: center;
     transition: 0.3s;
     transition-timing-function: ease-in-out;
+    box-shadow: 0px 0px 3px rgba(256, 256, 256, 1);
     &:hover {
       -moz-box-shadow: $shadow-small;
       -webkit-box-shadow: $shadow-small;
@@ -134,15 +159,17 @@ body {
     svg {
       width: 28px;
       height: 28px;
-      fill: $white;
+      fill: $green;
     }
   }
 }
 
 .phrase-box {
   margin-top: 48px;
+  margin-bottom: -64px;
   text-align: center;
   border: 2px solid $moss;
+  background-color: $white;
   border-radius: 16px;
   padding: 32px 24px 24px 24px;
   color: $moss;

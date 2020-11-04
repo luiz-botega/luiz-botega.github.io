@@ -1,0 +1,61 @@
+$primary-font: "Montserrat", sans-serif !important;
+$secondary-font: "Stylish", serif;
+
+$white: #fff;
+$dark: #01260b;
+$green: #3d662a;
+$moss: #96a478;
+$light-green: #cbd2bc;
+$bege: #f0ebc2;
+$yellow: #c2ad0a;
+
+$shadow-small: 0px 2px 8px rgba(1, 38, 11, 0.2),
+  0px 4px 10px rgba(1, 38, 11, 0.1);
+
+$shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
+  0px 4px 40px 5px rgba(1, 38, 11, 0.15);
+
+.about-div {
+  margin-top: 160px;
+  margin-bottom: 88px;
+}
+
+.about-bkgr {
+  background-color: $white;
+  -moz-box-shadow: $shadow-big;
+  -webkit-box-shadow: $shadow-big;
+  box-shadow: $shadow-big;
+  padding: 48px 32px 56px 32px !important;
+}
+
+.about-intro {
+  margin-left: 32px;
+  margin-bottom: 40px;
+  padding-left: 16px;
+  border-left: 2px solid $yellow;
+  width: 180px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  color: $dark;
+  span {
+    color: $yellow;
+    font-weight: 500;
+  }
+}
+
+.about-body {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  color: $dark;
+  span {
+    font-weight: 500;
+  }
+}
+
+.about-footer {
+  font-style: italic;
+  font-weight: 600;
+  color: $moss;
+}
