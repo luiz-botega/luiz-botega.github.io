@@ -106,7 +106,6 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
   }
   &.appear {
     transition-delay: 1s;
-
     -webkit-transform: scale(-1, 1) rotate(60deg);
     transform: scale(-1, 1) rotate(60deg);
     -webkit-transform-origin: center top;
