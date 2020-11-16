@@ -30,6 +30,7 @@ body {
 }
 
 #landing-bkgr {
+  z-index: 5;
   position: relative;
   top: 0;
   left: 0;
@@ -199,4 +200,24 @@ body {
   text-shadow: 2px 0 0 $moss, -2px 0 0 $moss, 0 2px 0 $moss, 0 -2px 0 $moss,
     1px 1px $moss, -1px -1px 0 $moss, 1px -1px 0 $moss, -1px 1px 0 $moss;
   color: $white;
+}
+
+#vertical-line-div {
+  z-index: 1;
+  position: fixed;
+  right: 24px;
+  top: -16px;
+  img {
+    margin-right: 4px;
+    width: 32px;
+  }
+}
+
+#vertical-line-cover {
+  position: fixed;
+  top: 0;
+  height: 75vh;
+  width: 40px;
+  background-color: $moss;
+  transform-origin: bottom;
 }

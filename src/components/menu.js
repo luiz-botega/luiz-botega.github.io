@@ -1,7 +1,6 @@
 import React, { Component } from "react"
 import leafSmall from "../../static/leafsmall.png"
 import menuStroke from "../../static/menustroke.png"
-import verticalLine from "../../static/verticalline.png"
 
 class Menu extends Component {
   constructor(props) {
@@ -14,48 +13,10 @@ class Menu extends Component {
   componentDidMount() {
     window.addEventListener("scroll", this.brandScroll)
     window.addEventListener("scroll", this.menuManager)
-    window.addEventListener("scroll", this.verticalLineManager)
     this.setState({
       aboutPosition: document.getElementsByClassName("about-div")[0]
         .offsetHeight,
     })
-  }
-
-  verticalLineManager = () => {
-    var body = document.body,
-      html = document.documentElement
-    var height = Math.max(
-      body.scrollHeight,
-      body.offsetHeight,
-      html.clientHeight,
-      html.scrollHeight
-    )
-
-    let verticalLineDiv = document.getElementById("vertical-line-div")
-
-    let initHeight = document.getElementById("landing-bkgr").offsetHeight
-
-    let maxHeight = document
-      .getElementById("contact-fixed-div")
-      .getBoundingClientRect().top
-
-    verticalLineDiv.children[0].setAttribute(
-      "style",
-      "height:" + (maxHeight + 40) + "px"
-    )
-
-    if (this.state.scrollPosition >= initHeight) {
-      verticalLineDiv.classList.remove("hidden")
-      let porcentage =
-        1 -
-        (this.state.scrollPosition - initHeight) /
-          (height - window.screen.height - initHeight)
-      document
-        .getElementById("vertical-line-cover")
-        .setAttribute("style", "transform: scaleY(" + porcentage + ")")
-    } else {
-      verticalLineDiv.classList.add("hidden")
-    }
   }
 
   menuManager = () => {
@@ -200,10 +161,6 @@ class Menu extends Component {
         >
           <img src={menuStroke} className="menuStroke" />
           <a className="blog-menu nav-link">my texts</a>
-        </div>
-        <div id="vertical-line-div" className="hidden">
-          <img src={verticalLine} className="vertical-line" />
-          <div id="vertical-line-cover"></div>
         </div>
         <div id="contact-fixed-div" className="hidden">
           {contacts}

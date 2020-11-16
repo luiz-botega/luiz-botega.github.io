@@ -188,24 +188,3 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
     }
   }
 }
-#vertical-line-div {
-  position: fixed;
-  right: 24px;
-  top: -16px;
-  img {
-    margin-right: 4px;
-    width: 32px;
-  }
-  &.hidden {
-    display: none;
-  }
-}
-
-#vertical-line-cover {
-  position: fixed;
-  top: 0;
-  height: 75vh;
-  width: 40px;
-  background-color: $moss;
-  transform-origin: bottom;
-}
