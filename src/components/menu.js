@@ -31,20 +31,30 @@ class Menu extends Component {
       html.scrollHeight
     )
 
+    let verticalLineDiv = document.getElementById("vertical-line-div")
+
     let initHeight = document.getElementById("landing-bkgr").offsetHeight
 
+    let maxHeight = document
+      .getElementById("contact-fixed-div")
+      .getBoundingClientRect().top
+
+    verticalLineDiv.children[0].setAttribute(
+      "style",
+      "height:" + (maxHeight + 40) + "px"
+    )
+
     if (this.state.scrollPosition >= initHeight) {
-      document.getElementById("vertical-line-div").classList.remove("hidden")
+      verticalLineDiv.classList.remove("hidden")
       let porcentage =
         1 -
         (this.state.scrollPosition - initHeight) /
           (height - window.screen.height - initHeight)
-      console.log(porcentage)
       document
         .getElementById("vertical-line-cover")
         .setAttribute("style", "transform: scaleY(" + porcentage + ")")
     } else {
-      document.getElementById("vertical-line-div").classList.add("hidden")
+      verticalLineDiv.classList.add("hidden")
     }
   }
 
