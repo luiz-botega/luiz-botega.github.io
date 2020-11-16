@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import Menu from "../components/menu"
 import Landing from "../components/landing"
 import About from "../components/about"
+import Process from "../components/process"
 
 class App extends Component {
   constructor(props) {
@@ -16,6 +17,7 @@ class App extends Component {
         <Menu />
         <Landing />
         <About />
+        <Process />
       </div>
     )
   }

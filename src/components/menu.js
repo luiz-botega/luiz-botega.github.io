@@ -1,22 +1,58 @@
 import React, { Component } from "react"
 import leafSmall from "../../static/leafsmall.png"
 import menuStroke from "../../static/menustroke.png"
+import verticalLine from "../../static/verticalline.png"
 
 class Menu extends Component {
   constructor(props) {
     super(props)
     this.state = {
       contactsFixed: false,
+      scrollPosition: 0,
     }
   }
   componentDidMount() {
     window.addEventListener("scroll", this.brandScroll)
     window.addEventListener("scroll", this.menuManager)
+    window.addEventListener("scroll", this.verticalLineManager)
+    this.setState({
+      aboutPosition: document.getElementsByClassName("about-div")[0]
+        .offsetHeight,
+    })
+  }
+
+  verticalLineManager = () => {
+    var body = document.body,
+      html = document.documentElement
+    var height = Math.max(
+      body.scrollHeight,
+      body.offsetHeight,
+      html.clientHeight,
+      html.scrollHeight
+    )
+
+    let initHeight = document.getElementById("landing-bkgr").offsetHeight
+
+    if (this.state.scrollPosition >= initHeight) {
+      document.getElementById("vertical-line-div").classList.remove("hidden")
+      let porcentage =
+        1 -
+        (this.state.scrollPosition - initHeight) /
+          (height - window.screen.height - initHeight)
+      console.log(porcentage)
+      document
+        .getElementById("vertical-line-cover")
+        .setAttribute("style", "transform: scaleY(" + porcentage + ")")
+    } else {
+      document.getElementById("vertical-line-div").classList.add("hidden")
+    }
   }
 
   menuManager = () => {
     let scrollPosition = window.scrollY
     let landingHeight = document.getElementById("landing-bkgr").offsetHeight
+
+    this.setState({ scrollPosition: scrollPosition })
 
     if (scrollPosition > landingHeight) {
       document.getElementById("contact-fixed-div").classList.remove("hidden")
@@ -24,28 +60,20 @@ class Menu extends Component {
       document.getElementById("contact-fixed-div").classList.add("hidden")
     }
 
-    if (
-      scrollPosition >
-      document.querySelectorAll(".about-div")[0].offsetHeight - 45
-    ) {
-      let div = document.getElementById("about-menu")
-      if (div.getElementsByTagName("img").length == 0) {
-        let img = document.createElement("img")
-        img.src = menuStroke
-        img.setAttribute("height", div.offsetHeight + 20 + "px")
-        div.appendChild(img)
-        setTimeout(
-          () => img.classList.add("transition"),
-          div.classList.add("selected"),
-          20
-        )
-      }
+    if (this.state.scrollPosition > this.state.aboutPosition) {
+      let button = document.querySelectorAll("#about-menu")[0]
+      button.classList.add("selected")
+      let stroke = document.querySelectorAll("#about-menu .menuStroke")[0]
+      stroke.classList.add("show")
+      stroke.setAttribute(
+        "style",
+        "height:" + (button.offsetHeight + 40) + "px"
+      )
     } else {
-      let imgToRemove = document.querySelectorAll(".selected > img")[0]
-      if (imgToRemove) {
-        imgToRemove.parentNode.classList.remove("selected")
-        imgToRemove.parentNode.removeChild(imgToRemove)
-      }
+      document
+        .querySelectorAll("#about-menu .menuStroke")[0]
+        .classList.remove("show")
+      document.querySelectorAll("#about-menu")[0].classList.remove("selected")
     }
   }
 
@@ -70,30 +98,14 @@ class Menu extends Component {
           top: 0,
           behavior: "smooth",
         })
-        let imgToRemove = document.querySelectorAll(".selected > img")[0]
-        imgToRemove.parentNode.classList.remove("selected")
-        imgToRemove.parentNode.removeChild(imgToRemove)
-
         break
       case "about-menu":
-        let scrollHeight =
-          document.querySelectorAll(".about-div")[0].offsetHeight - 45
+        let scrollHeight = document.querySelectorAll(".about-div")[0]
+          .offsetHeight
         window.scrollTo({
           top: scrollHeight,
           behavior: "smooth",
         })
-        let div = document.getElementById("about-menu")
-        if (div.getElementsByTagName("img").length == 0) {
-          let img = document.createElement("img")
-          img.src = menuStroke
-          img.setAttribute("height", div.offsetHeight + 20 + "px")
-          div.appendChild(img)
-          setTimeout(
-            () => img.classList.add("transition"),
-            div.classList.add("selected"),
-            20
-          )
-        }
         break
       case "process-menu":
         break
@@ -152,6 +164,7 @@ class Menu extends Component {
           className="nav-item-box"
           onClick={() => this.scrollDown("about-menu")}
         >
+          <img src={menuStroke} className="menuStroke" />
           <a className="nav-link">who am i</a>
         </div>
         <div
@@ -159,6 +172,7 @@ class Menu extends Component {
           className="nav-item-box"
           onClick={() => this.scrollDown("process-menu")}
         >
+          <img src={menuStroke} className="menuStroke" />
           <a className="process-menu nav-link">my process</a>
         </div>
         <div
@@ -166,6 +180,7 @@ class Menu extends Component {
           className="nav-item-box"
           onClick={() => this.scrollDown("portfolio-menu")}
         >
+          <img src={menuStroke} className="menuStroke" />
           <a className="portfolio-menu nav-link">my works</a>
         </div>
         <div
@@ -173,7 +188,12 @@ class Menu extends Component {
           className="nav-item-box"
           onClick={() => this.scrollDown("blog-menu")}
         >
+          <img src={menuStroke} className="menuStroke" />
           <a className="blog-menu nav-link">my texts</a>
+        </div>
+        <div id="vertical-line-div" className="hidden">
+          <img src={verticalLine} className="vertical-line" />
+          <div id="vertical-line-cover"></div>
         </div>
         <div id="contact-fixed-div" className="hidden">
           {contacts}

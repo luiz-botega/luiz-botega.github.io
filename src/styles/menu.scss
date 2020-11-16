@@ -47,7 +47,7 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
     transform: scaleY(0);
     transform-origin: bottom center;
   }
-  img.transition {
+  img.show {
     transform: scaleY(1);
     transform-origin: bottom center;
   }
@@ -170,7 +170,7 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
       margin-top: 40px;
       align-items: center;
       justify-content: center;
-      box-shadow: 0px 0px 3px rgba(256, 256, 256, 1);
+      transition: 0.3s;
       cursor: pointer;
       &:hover {
         -moz-box-shadow: $shadow-small;
@@ -187,4 +187,26 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
       }
     }
   }
+}
+#vertical-line-div {
+  position: fixed;
+  right: 24px;
+  top: -16px;
+  img {
+    margin-right: 4px;
+    height: 75vh;
+    width: 32px;
+  }
+  &.hidden {
+    display: none;
+  }
+}
+
+#vertical-line-cover {
+  position: fixed;
+  top: 0;
+  height: 75vh;
+  width: 40px;
+  background-color: $moss;
+  transform-origin: bottom;
 }

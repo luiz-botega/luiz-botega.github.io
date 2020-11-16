@@ -12,7 +12,7 @@ class About extends Component {
     let about = (
       <div className="about-div">
         <div className="row about-bkgr">
-          <div className="col-8">
+          <div id="about-text" className="col-8">
             <div className="about-intro">
               Hi there! My name is <span>Luiz</span> and I work as a{" "}
               <span>designer</span>. Great to see you here!
