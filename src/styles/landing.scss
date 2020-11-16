@@ -29,7 +29,7 @@ body {
   overflow-x: hidden;
 }
 
-.landing-bkgr {
+#landing-bkgr {
   position: relative;
   top: 0;
   left: 0;
@@ -134,7 +134,7 @@ body {
 
 // contacts
 
-.lading-bottom-box {
+.landing-bottom-box {
   margin-top: 40vh;
   > div {
     display: flex;
@@ -157,6 +157,7 @@ body {
     transition: 0.3s;
     transition-timing-function: ease-in-out;
     box-shadow: 0px 0px 3px rgba(256, 256, 256, 1);
+    cursor: pointer;
     &:hover {
       -moz-box-shadow: $shadow-small;
       -webkit-box-shadow: $shadow-small;
