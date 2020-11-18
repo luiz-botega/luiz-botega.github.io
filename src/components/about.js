@@ -10,7 +10,7 @@ class About extends Component {
 
   render() {
     let about = (
-      <div className="about-div">
+      <div id="about-div">
         <div className="row about-bkgr">
           <div id="about-text" className="col-8">
             <div className="about-intro">

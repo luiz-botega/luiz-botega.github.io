@@ -18,19 +18,49 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
 // process
 
 #process-div {
-  margin-top: 200px;
-  margin-bottom: 88px;
-}
-
-#process-bkgr {
-  margin: auto;
+  margin-top: 250px;
+  margin-bottom: 1000px;
+  flex-wrap: inherit;
 }
 
 #img-div {
+  -moz-box-shadow: $shadow-big;
+  -webkit-box-shadow: $shadow-big;
+  box-shadow: $shadow-big;
   background-color: $white;
-  padding: 16px 0px !important;
+  padding: 8px !important;
 }
 
 #process-img {
   width: 100%;
+}
+
+#process-intro {
+  margin-top: 16px;
+  margin-left: 32px;
+  color: $white;
+  font-weight: 300;
+  span {
+    font-weight: 500;
+    color: $bege;
+  }
+}
+
+#process-spaces {
+  display: flex;
+  margin-top: 24px;
+  justify-content: space-between;
+  > div {
+    -moz-box-shadow: $shadow-big;
+    -webkit-box-shadow: $shadow-big;
+    box-shadow: $shadow-big;
+    background-color: $white;
+    max-width: 48%;
+    padding: 12px !important;
+    .process-title {
+      color: $yellow;
+      font-family: $secondary-font;
+      font-size: 20px;
+    }
+  }
 }

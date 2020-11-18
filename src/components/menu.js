@@ -12,40 +12,58 @@ class Menu extends Component {
   }
   componentDidMount() {
     window.addEventListener("scroll", this.brandScroll)
-    window.addEventListener("scroll", this.menuManager)
-    this.setState({
-      aboutPosition: document.getElementsByClassName("about-div")[0]
-        .offsetHeight,
-    })
+    var timer = null
+    window.addEventListener(
+      "scroll",
+      () => {
+        if (timer !== null) {
+          clearTimeout(timer)
+        }
+        timer = setTimeout(this.menuManager.bind(this), 150)
+      },
+      false
+    )
   }
 
   menuManager = () => {
     let scrollPosition = window.scrollY
-    let landingHeight = document.getElementById("landing-bkgr").offsetHeight
 
     this.setState({ scrollPosition: scrollPosition })
 
-    if (scrollPosition > landingHeight) {
-      document.getElementById("contact-fixed-div").classList.remove("hidden")
+    if (
+      this.state.scrollPosition >
+      document.getElementById("process-div").offsetTop - 150
+    ) {
+      this.clearStroke()
+      this.paintStroke("#process-menu")
+    } else if (
+      this.state.scrollPosition >
+      document.getElementById("about-div").offsetTop - 150
+    ) {
+      this.clearStroke()
+      this.paintStroke("#about-menu")
     } else {
-      document.getElementById("contact-fixed-div").classList.add("hidden")
+      this.clearStroke()
     }
+  }
 
-    if (this.state.scrollPosition > this.state.aboutPosition) {
-      let button = document.querySelectorAll("#about-menu")[0]
-      button.classList.add("selected")
-      let stroke = document.querySelectorAll("#about-menu .menuStroke")[0]
-      stroke.classList.add("show")
-      stroke.setAttribute(
-        "style",
-        "height:" + (button.offsetHeight + 40) + "px"
-      )
-    } else {
-      document
-        .querySelectorAll("#about-menu .menuStroke")[0]
-        .classList.remove("show")
-      document.querySelectorAll("#about-menu")[0].classList.remove("selected")
+  clearStroke = () => {
+    let selectedStroke = document.querySelectorAll(".menuStroke.show")[0]
+    if (selectedStroke) {
+      selectedStroke.classList.remove("show")
     }
+    let selectedItem = document.querySelectorAll(".nav-item-box.selected")[0]
+    if (selectedItem) {
+      selectedItem.classList.remove("selected")
+    }
+  }
+
+  paintStroke = menuItem => {
+    let button = document.querySelectorAll(menuItem)[0]
+    button.classList.add("selected")
+    let stroke = document.querySelectorAll(menuItem + " .menuStroke")[0]
+    stroke.classList.add("show")
+    stroke.setAttribute("style", "height:" + (button.offsetHeight + 40) + "px")
   }
 
   brandScroll = () => {
@@ -56,13 +74,16 @@ class Menu extends Component {
     if (y <= height) {
       brandDiv.classList = "brand-div hide"
       leafBox.classList = "brand-leaf-box hide"
+      document.getElementById("contact-fixed-div").classList.add("hidden")
     } else {
       brandDiv.classList = "brand-div appear"
       leafBox.classList = "brand-leaf-box appear"
+      document.getElementById("contact-fixed-div").classList.remove("hidden")
     }
   }
 
   scrollDown = className => {
+    let scrollHeight
     switch (className) {
       case "back-to-top":
         window.scrollTo({
@@ -71,14 +92,18 @@ class Menu extends Component {
         })
         break
       case "about-menu":
-        let scrollHeight = document.querySelectorAll(".about-div")[0]
-          .offsetHeight
+        scrollHeight = document.getElementById("about-div").offsetTop - 130
         window.scrollTo({
           top: scrollHeight,
           behavior: "smooth",
         })
         break
       case "process-menu":
+        scrollHeight = document.getElementById("process-div").offsetTop - 130
+        window.scrollTo({
+          top: scrollHeight,
+          behavior: "smooth",
+        })
         break
       case "portfolio-menu":
         break

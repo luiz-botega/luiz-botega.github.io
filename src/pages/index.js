@@ -38,7 +38,6 @@ class App extends Component {
     )
 
     if (window.scrollY >= initHeight) {
-      verticalLineDiv.classList.remove("hidden")
       let porcentage =
         1 -
         (window.scrollY - initHeight) /
@@ -46,15 +45,13 @@ class App extends Component {
       document
         .getElementById("vertical-line-cover")
         .setAttribute("style", "transform: scaleY(" + porcentage + ")")
-    } else {
-      verticalLineDiv.classList.add("hidden")
     }
   }
   render() {
     return (
       <div>
         <Menu />
-        <div id="vertical-line-div" className="hidden">
+        <div id="vertical-line-div">
           <img src={verticalLine} className="vertical-line" />
           <div id="vertical-line-cover"></div>
         </div>
