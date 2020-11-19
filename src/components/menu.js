@@ -19,7 +19,7 @@ class Menu extends Component {
         if (timer !== null) {
           clearTimeout(timer)
         }
-        timer = setTimeout(this.menuManager.bind(this), 150)
+        timer = setTimeout(this.menuManager.bind(this), 50)
       },
       false
     )

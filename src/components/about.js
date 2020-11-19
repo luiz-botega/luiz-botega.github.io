@@ -48,6 +48,19 @@ class About extends Component {
                 and I hope you enjoy your stay :)
               </p>
             </div>
+            <div className="values-box">
+              <div className="values-header">Personal values</div>
+              <div className="values-body">
+                <div>human-centered culture</div>
+                <div>diversity of body and mind</div>
+
+                <div>transparency</div>
+                <div>organized processes</div>
+                <div>respect for people</div>
+                <div>ownership and trust</div>
+                <div>coherence between speech and action</div>
+              </div>
+            </div>
             <div className="languages-box">
               <div className="languages-header">Languages</div>
               <div className="languages-body">

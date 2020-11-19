@@ -108,7 +108,7 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
 }
 
 .languages-box {
-  margin-top: 56px;
+  margin-top: 32px;
 
   .languages-header {
     color: $yellow;
@@ -163,5 +163,32 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
     width: 5%;
     height: 10px;
     border: 1px solid $green;
+  }
+}
+
+.values-box {
+  margin-top: 32px;
+  .values-header {
+    color: $yellow;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .values-body {
+    margin: 16px 24px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    div {
+      display: flex;
+      color: $dark;
+      font-size: 14px;
+      font-weight: 300;
+      font-style: italic;
+      margin-bottom: 16px;
+      max-width: 45%;
+      flex: 0 0 45%;
+    }
   }
 }
