@@ -43,6 +43,11 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
 #process {
   margin: auto;
 
+  #img-div.hidden {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+
   #img-div {
     -moz-box-shadow: $shadow-big;
     -webkit-box-shadow: $shadow-big;
@@ -50,6 +55,7 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
     background-color: $white;
     padding: 8px !important;
     margin: auto;
+    transition: 0.5s ease-in-out;
   }
 
   #process-img {
@@ -59,8 +65,22 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
 
 #process-spaces {
   display: flex;
-  margin-top: 24px;
+  margin-top: 40px;
   justify-content: space-between;
+
+  .hidden {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+
+  #problem-space {
+    transition: 0.5s ease-in-out;
+  }
+
+  #solution-space {
+    transition: 0.5s ease-in-out;
+  }
+
   > div {
     -moz-box-shadow: $shadow-big;
     -webkit-box-shadow: $shadow-big;
@@ -78,13 +98,32 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
       font-size: 14px;
       font-weight: 300;
       line-height: 20px;
-      > div {
-        margin-top: 8px;
-        margin-left: 16px;
-      }
-      span {
-        color: $yellow;
-        font-weight: 500;
+      > .process-phases {
+        margin: 8px 0px 16px 16px;
+        > span {
+          color: $white;
+          font-weight: 500;
+          z-index: 2;
+          position: relative;
+        }
+        > img {
+          margin-left: -56px;
+          margin-top: -2px;
+          width: 160px;
+          height: 24px;
+          position: absolute;
+          z-index: 1;
+        }
+        .process-questions,
+        .process-tools {
+          margin-left: 16px;
+          margin-top: 16px;
+          span {
+            color: $green;
+            font-weight: 500;
+            font-style: italic;
+          }
+        }
       }
     }
   }
