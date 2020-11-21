@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import leafSmall from "../../static/leafsmall.png"
 import menuStroke from "../../static/menustroke.png"
+import verticalLine from "../../static/verticalline.png"
 
 class Menu extends Component {
   constructor(props) {
@@ -12,6 +13,8 @@ class Menu extends Component {
   }
   componentDidMount() {
     window.addEventListener("scroll", this.brandScroll)
+    window.addEventListener("scroll", this.verticalLineManager)
+
     var timer = null
     window.addEventListener(
       "scroll",
@@ -23,6 +26,37 @@ class Menu extends Component {
       },
       false
     )
+  }
+
+  verticalLineManager = () => {
+    let finalHeight = document.body.offsetHeight
+
+    let initialHeight = document.getElementById("landing-bkgr").offsetHeight
+
+    let verticalLineDiv = document.getElementById("vertical-line-div")
+
+    let maxLineHeight = document
+      .getElementById("contact-fixed-div")
+      .getBoundingClientRect().top
+
+    verticalLineDiv.children[0].setAttribute(
+      "style",
+      "height:" + (maxLineHeight + 40) + "px"
+    )
+
+    if (window.scrollY >= initialHeight) {
+      let porcentage =
+        16 +
+        ((window.scrollY - initialHeight) * maxLineHeight) /
+          (finalHeight - 200 - window.screen.height - initialHeight)
+      document
+        .getElementById("vertical-line-div")
+        .setAttribute("style", "height:" + porcentage + "px")
+    } else {
+      document
+        .getElementById("vertical-line-div")
+        .setAttribute("style", "height: 0vh")
+    }
   }
 
   menuManager = () => {
@@ -189,6 +223,10 @@ class Menu extends Component {
         </div>
         <div id="contact-fixed-div" className="hidden">
           {contacts}
+        </div>
+
+        <div id="vertical-line-div">
+          <img src={verticalLine} className="vertical-line" />
         </div>
       </nav>
     )

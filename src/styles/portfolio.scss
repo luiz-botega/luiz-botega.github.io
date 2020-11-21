@@ -1,0 +1,33 @@
+$primary-font: "Montserrat", sans-serif !important;
+$secondary-font: "Stylish", serif;
+
+$white: #fff;
+$dark: #01260b;
+$green: #3d662a;
+$moss: #96a478;
+$light-green: #cbd2bc;
+$bege: #f0ebc2;
+$yellow: #c2ad0a;
+
+$shadow-small: 0px 2px 8px rgba(1, 38, 11, 0.2),
+  0px 4px 10px rgba(1, 38, 11, 0.1);
+
+$shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
+  0px 4px 40px 5px rgba(1, 38, 11, 0.15);
+
+// process
+
+#portfolio-bkgr {
+  margin-top: 250px;
+  margin-bottom: 1000px;
+  background-color: $bege;
+  height: 100vh;
+}
+
+#leafage {
+  position: absolute;
+  img {
+    position: absolute;
+    height: 150px;
+  }
+}

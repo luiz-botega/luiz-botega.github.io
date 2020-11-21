@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import processCycle from "../../static/processcycle.png"
-import namestroke from "../../static/namestroke.png"
+import nameStrokeSmall from "../../static/namestrokesmall.png"
 
 class Process extends Component {
   constructor(props) {
@@ -79,7 +79,7 @@ class Process extends Component {
                 peoples needs, exploring opportunities, and discussing
                 possibilies.
                 <div className="process-phases">
-                  <img src={namestroke} alt="" />
+                  <img src={nameStrokeSmall} alt="" />
                   <span>Discover:</span> <br />
                   includes empathizing with people, scoping opportunities of
                   improvement and exploring technical needs. This first
@@ -98,7 +98,7 @@ class Process extends Component {
                   </div>
                 </div>
                 <div className="process-phases">
-                  <img src={namestroke} alt="" />
+                  <img src={nameStrokeSmall} alt="" />
                   <span>Define:</span> <br />
                   focuses on framing the discoveries into a plan of action,
                   including scope, timeframe, metrics and risks. While
@@ -125,7 +125,7 @@ class Process extends Component {
                 with a mindset of cyclically developing services that improve
                 peoples lives.
                 <div className="process-phases">
-                  <img src={namestroke} alt="" />
+                  <img src={nameStrokeSmall} alt="" />
                   <span>Develop:</span> <br />
                   aims for another divergence, now of ideas and concepts able to
                   solve the pains uncovered in the previous space. Far from
@@ -146,7 +146,7 @@ class Process extends Component {
                   </div>
                 </div>
                 <div className="process-phases">
-                  <img src={namestroke} alt="" />
+                  <img src={nameStrokeSmall} alt="" />
                   <span>Deliver:</span> <br />
                   as a latter step on an iterative process, concentrates on
                   assuring a solution consensus, matching needs and features,
