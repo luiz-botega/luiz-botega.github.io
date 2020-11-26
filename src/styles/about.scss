@@ -6,8 +6,9 @@ $dark: #01260b;
 $green: #3d662a;
 $moss: #96a478;
 $light-green: #cbd2bc;
-$bege: #f0ebc2;
-$yellow: #c2ad0a;
+$bege: #fce9c0;
+$yellow: #edbc0b;
+$brown: #886006;
 
 $shadow-small: 0px 2px 8px rgba(1, 38, 11, 0.2),
   0px 4px 10px rgba(1, 38, 11, 0.1);
@@ -16,7 +17,8 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
   0px 4px 40px 5px rgba(1, 38, 11, 0.15);
 
 #about-div {
-  margin-top: 200px;
+  margin-top: 70px;
+  padding-top: 130px;
   margin-bottom: 88px;
 }
 
@@ -26,6 +28,7 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
   -webkit-box-shadow: $shadow-big;
   box-shadow: $shadow-big;
   padding: 48px 40px 56px 40px !important;
+  transition: 0.3s;
 
   #about-text {
     display: flex;

@@ -6,8 +6,9 @@ $dark: #01260b;
 $green: #3d662a;
 $moss: #96a478;
 $light-green: #cbd2bc;
-$bege: #f0ebc2;
-$yellow: #c2ad0a;
+$bege: #fce9c0;
+$yellow: #edbc0b;
+$brown: #886006;
 
 $shadow-small: 0px 2px 8px rgba(1, 38, 11, 0.2),
   0px 4px 10px rgba(1, 38, 11, 0.1);
@@ -15,13 +16,13 @@ $shadow-small: 0px 2px 8px rgba(1, 38, 11, 0.2),
 $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
   0px 4px 40px 5px rgba(1, 38, 11, 0.15);
 
-// process
+// portfolio
 
-#portfolio-bkgr {
+#portfolio-div {
   margin-top: 250px;
-  margin-bottom: 1000px;
-  background-color: $bege;
+  background-color: $green;
   height: 100vh;
+  padding: 10vh 0px;
 }
 
 #leafage {
@@ -29,5 +30,62 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
   img {
     position: absolute;
     height: 150px;
+  }
+}
+
+#portfolio-box {
+  height: 80vh;
+  #portfolio-menu {
+    margin: auto;
+    font-family: $secondary-font;
+    font-size: 24px;
+    line-height: 22px;
+    background-color: #3d662a99;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    div {
+      transition: 0.3s;
+      color: $white;
+      margin: 8px 8px !important;
+      cursor: pointer;
+    }
+    div:hover {
+      color: $bege;
+      text-shadow: 0px 1px 2px $yellow;
+    }
+  }
+
+  #all-cases {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    .case-card {
+      height: 30%;
+      width: 30%;
+      margin: 8px;
+      background-color: $white;
+      transition: 0.5s;
+      a {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        .card-title {
+          color: $dark;
+          opacity: 0;
+          transition: 0.3s;
+        }
+      }
+    }
+    .case-card:hover {
+      transform: scale(1.03);
+      box-shadow: $shadow-big;
+      .card-title {
+        opacity: 1;
+      }
+    }
   }
 }

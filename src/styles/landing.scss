@@ -8,8 +8,9 @@ $dark: #01260b;
 $green: #3d662a;
 $moss: #96a478;
 $light-green: #cbd2bc;
-$bege: #f0ebc2;
-$yellow: #c2ad0a;
+$bege: #fce9c0;
+$yellow: #edbc0b;
+$brown: #886006;
 
 $shadow-small: 0px 2px 8px rgba(1, 38, 11, 0.2),
   0px 4px 10px rgba(1, 38, 11, 0.1);
@@ -78,13 +79,13 @@ body {
   position: absolute !important;
   z-index: 2;
   img {
-    height: 260px;
+    height: 220px;
     width: 75vw;
     min-width: 850px;
     position: absolute;
     top: 30vh;
     left: -13vw;
-    margin-top: -55px;
+    margin-top: -30px;
   }
 }
 
@@ -204,24 +205,4 @@ body {
   text-shadow: 2px 0 0 $moss, -2px 0 0 $moss, 0 2px 0 $moss, 0 -2px 0 $moss,
     1px 1px $moss, -1px -1px 0 $moss, 1px -1px 0 $moss, -1px 1px 0 $moss;
   color: $white;
-}
-
-#vertical-line-div {
-  z-index: 1;
-  position: fixed;
-  right: 24px;
-  top: -16px;
-  img {
-    margin-right: 4px;
-    width: 32px;
-  }
-}
-
-#vertical-line-cover {
-  position: fixed;
-  top: 0;
-  height: 75vh;
-  width: 40px;
-  background-color: $moss;
-  transform-origin: bottom;
 }

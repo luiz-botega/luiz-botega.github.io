@@ -7,20 +7,20 @@ class Process extends Component {
     super(props)
   }
   componentDidMount = () => {
-    window.addEventListener("scroll", this.mangeCards)
+    window.addEventListener("scroll", this.manageCards)
   }
 
-  mangeCards = () => {
+  componentWillUnmount = () => {
+    window.removeEventListener("scroll", this.manageCards)
+  }
+
+  manageCards = () => {
     let scrollPosition = window.scrollY
     let triggerHeight = document.getElementById("process-div").offsetTop
     if (scrollPosition >= triggerHeight - 130) {
       document.getElementById("img-div").classList.remove("hidden")
-      setTimeout(() => {
-        document.getElementById("problem-space").classList.remove("hidden")
-      }, 800)
-      setTimeout(() => {
-        document.getElementById("solution-space").classList.remove("hidden")
-      }, 1000)
+      document.getElementById("problem-space").classList.remove("hidden")
+      document.getElementById("solution-space").classList.remove("hidden")
     } else {
       document.getElementById("img-div").classList.add("hidden")
       document.getElementById("problem-space").classList.add("hidden")
@@ -41,12 +41,14 @@ class Process extends Component {
             other stakeholders, the society around them and even the
             environment. Seeing solutions as service imply in a{" "}
             <span>holistic</span> view of the design process and its
-            interdisciplinary participants. Design should be systemic, since
-            every decision has multiple consequences, and the holistic service
-            viewpoint is able to manage such trade-offs. These solutions derive
-            from and unfold in human <span>experiences</span>, from initial
-            exploratory experience of developing the solution to the final
-            experience of using it, and with that retro-feeding the process.
+            interdisciplinary participants. Out perspective should be systemic
+            and we have to embrace embiguity along the way, since every decision
+            has multiple consequences, and the holistic service viewpoint is
+            helpfull to manage such trade-offs. Design is fundamentally{" "}
+            <span>contextual</span>, since every development is multifaceted and
+            unique. It requires the mediation of different tools for distinct
+            teams and objectives, constantly adapting the framework along the
+            way.
           </div>
           <div className="col-6">
             This means that, in a service perspective, the{" "}
@@ -54,14 +56,17 @@ class Process extends Component {
             need to identify the right problem and then seek the right solution.
             But while developing this solution our target problem is bound to
             change, gain new perspectives and nuances that will imply in new
-            features and interpretations to our ever evolving solution. Lastly,
-            Service Design is a <span>sequential process</span> and has two
-            dimensions. One is external, helping teams to deliver value from
-            end-to-end to all humans and beyond, while the other is internal,
-            helping development teams transversally and ensuring the culture and
-            practices of service design. We service designers, as mediators,
-            have to trust our skills, insights and the process itself, because
-            the Service Design process has in its core{" "}
+            interpretations to our ever evolving solution. These solutions
+            derive from and unfold in human <span>experiences</span>, from
+            initial exploratory experience of developing the solution to the
+            final experience of using it, and with that retro-feeding the
+            process. Lastly, Service Design is a <span>sequential process</span>{" "}
+            and has two dimensions. One is external, helping teams to deliver
+            value from end-to-end to all humans and beyond, while the other is
+            internal, helping development teams transversally and ensuring
+            culture and practices of service design. We service designers, as
+            mediators, have to trust our skills, insights and the process
+            itself, because the Service Design process has in its core{" "}
             <span>making the world a better place for all</span>.
           </div>
         </div>
@@ -132,17 +137,16 @@ class Process extends Component {
                   being a chaos, the creative process here can be organized
                   through research, facilitated ideation and early prototyping.
                   <div className="process-questions">
-                    <span>Main questions:</span>
-                    where can we gather inspiration to achieve insights? How are
-                    we going to deliver value? What can be made to solve users
-                    pain points? Which colateral effects these ideas may have on
-                    other people? How can we promote a shared view among the
-                    team?
+                    <span>Main questions:</span> where can we gather inspiration
+                    to achieve insights? How are we going to deliver value? What
+                    can be made to solve users pain points? Which colateral
+                    effects these ideas may have on other people? How can we
+                    promote a shared view among the team?
                   </div>
                   <div className="process-tools">
-                    <span>Useful tools:</span>
-                    brainstorming variations, roleplaying, world café,
-                    wireframing, mock-ups, low-fidelity prototyping.
+                    <span>Useful tools:</span> brainstorming variations,
+                    roleplaying, world café, wireframing, mock-ups, low-fidelity
+                    prototyping.
                   </div>
                 </div>
                 <div className="process-phases">

@@ -53,9 +53,10 @@ class About extends Component {
               <div className="values-body">
                 <div>human-centered culture</div>
                 <div>diversity of body and mind</div>
-
+                <div>fairness of judgement</div>
                 <div>transparency</div>
                 <div>organized processes</div>
+                <div>planning before execution</div>
                 <div>respect for people</div>
                 <div>ownership and trust</div>
                 <div>coherence between speech and action</div>
@@ -95,6 +96,15 @@ class About extends Component {
             <div className="experiences-box">
               <div className="experiences-header">Experiences</div>
               <div className="experiences-body">
+                <div>
+                  <div className="experiences-title">
+                    Design Strategy Leader
+                  </div>
+                  <div className="experiences-loc">
+                    @ Aquarela Advances Analytics
+                  </div>
+                  <div className="experiences-time">Jul 2020 - present</div>
+                </div>
                 <div>
                   <div className="experiences-title">
                     Service Designer & Data Scientist

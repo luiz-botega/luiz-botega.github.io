@@ -6,8 +6,9 @@ $dark: #01260b;
 $green: #3d662a;
 $moss: #96a478;
 $light-green: #cbd2bc;
-$bege: #f0ebc2;
-$yellow: #c2ad0a;
+$bege: #fce9c0;
+$yellow: #edbc0b;
+$brown: #886006;
 
 $shadow-small: 0px 2px 8px rgba(1, 38, 11, 0.2),
   0px 4px 10px rgba(1, 38, 11, 0.1);
@@ -16,6 +17,13 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
   0px 4px 40px 5px rgba(1, 38, 11, 0.15);
 
 // menu
+
+a {
+  z-index: 2;
+  &:hover {
+    text-decoration: none !important;
+  }
+}
 
 .flex-column {
   justify-content: center;
@@ -42,7 +50,7 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
   }
   img {
     position: absolute;
-    width: 110%;
+    width: 65px;
     transition: 0.3s;
     transform: scaleY(0);
     transform-origin: bottom center;
@@ -51,7 +59,7 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
     transform: scaleY(1);
     transform-origin: bottom center;
   }
-  &.selected a {
+  &.selected .nav-link {
     color: $white !important;
     z-index: 1;
     transition: 0.2s;
@@ -76,7 +84,6 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
   z-index: 10;
   transition: 1s;
   display: flex;
-  cursor: pointer;
   &.appear {
     left: 0px;
   }
@@ -92,6 +99,8 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
   text-align: center;
   white-space: nowrap;
   z-index: 2;
+  cursor: pointer;
+
   div {
     margin: 0px 34px;
     display: block;
@@ -102,6 +111,7 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
     font-size: 40px;
     line-height: 48px;
     color: $green;
+    text-decoration: none;
   }
   .brand-subtitle {
     font-size: 16px;

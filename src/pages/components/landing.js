@@ -10,6 +10,10 @@ class Landing extends Component {
     window.addEventListener("scroll", this.contactsManager)
   }
 
+  componentWillUnmount = () => {
+    window.removeEventListener("scroll", this.contactsManager)
+  }
+
   contactsManager = () => {
     let contacts = document.getElementById("contact-box")
     let landingHeight = document.getElementById("landing-bkgr").offsetHeight

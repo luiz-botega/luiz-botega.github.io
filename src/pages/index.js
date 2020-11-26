@@ -1,10 +1,10 @@
 import React, { Component } from "react"
-import { Link } from "gatsby"
-import Menu from "../components/menu"
-import Landing from "../components/landing"
-import About from "../components/about"
-import Process from "../components/process"
-import Portfolio from "../components/portfolio"
+import Menu from "./components/menu"
+import Landing from "./components/landing"
+import About from "./components/about"
+import Process from "./components/process"
+import Portfolio from "./components/portfolio"
+import Texts from "./components/texts"
 
 class App extends Component {
   constructor(props) {
@@ -19,6 +19,7 @@ class App extends Component {
         <About />
         <Process />
         <Portfolio />
+        <Texts />
       </div>
     )
   }
