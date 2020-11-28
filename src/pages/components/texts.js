@@ -26,6 +26,24 @@ class Texts extends Component {
     this.setState({ textsPosition: textsPosition })
   }
 
+  copyToClipboard = () => {
+    let emailPopup = document.getElementById("footer-email-popup")
+    emailPopup.classList.remove("show")
+
+    var textarea = document.createElement("textarea")
+    // to avoid breaking orgain page when copying more words
+    // cant copy when adding below this code
+    // dummy.style.display = 'none'
+    document.body.appendChild(textarea)
+    //Be careful if you use texarea. setAttribute('value', value), which works with "input" does not work with "textarea". – Eduard
+    textarea.value = "lfbotega@gmail.com"
+    textarea.select()
+    document.execCommand("copy")
+    document.body.removeChild(textarea)
+
+    emailPopup.classList.add("show")
+  }
+
   render() {
     let posts_show = []
     let i = this.state.textsPosition
@@ -98,11 +116,19 @@ class Texts extends Component {
             </div>
           </div>
           <div className="footer-column col-5">
-            <div className="footer-body">
+            <div className="footer-body email">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path d="M19 4H5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-.67 2L12 10.75 5.67 6zM19 18H5a1 1 0 0 1-1-1V7.25l7.4 5.55a1 1 0 0 0 .6.2 1 1 0 0 0 .6-.2L20 7.25V17a1 1 0 0 1-1 1z" />
               </svg>
-              <div className="footer-text">lfbotega@gmail.com</div>
+              <div
+                className="footer-text"
+                onClick={() => this.copyToClipboard()}
+              >
+                lfbotega@gmail.com
+              </div>
+              <div id="footer-email-popup">
+                <div>e-mail copied to your clipborad :)</div>
+              </div>
             </div>
             <div className="footer-body">
               <a

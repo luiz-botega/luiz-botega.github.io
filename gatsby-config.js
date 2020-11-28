@@ -6,5 +6,17 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [`gatsby-plugin-sass`],
+  plugins: [
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Luiz Botega",
+        short_name: "Luiz Botega",
+        start_url: "/",
+        icon: "src/static/icon.png",
+      },
+    },
+  ],
 }

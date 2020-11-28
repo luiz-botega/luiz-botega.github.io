@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { Helmet } from "react-helmet"
 import Menu from "./components/menu"
 import Landing from "./components/landing"
 import About from "./components/about"
@@ -14,6 +15,10 @@ class App extends Component {
   render() {
     return (
       <div id="outer-div">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Luiz Botega</title>
+        </Helmet>
         <Menu />
         <Landing />
         <About />

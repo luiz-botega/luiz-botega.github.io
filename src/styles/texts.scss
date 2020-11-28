@@ -44,6 +44,10 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
       transform: scale(1.05);
       fill: $yellow;
     }
+    &:active {
+      transform: scale(1);
+      fill: $yellow;
+    }
   }
 }
 
@@ -69,6 +73,9 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
     transition: 0.5s;
     &:hover {
       transform: scale(1.03);
+    }
+    &:active {
+      transform: scale(1);
     }
     .text-image-div {
       height: 40%;
@@ -120,7 +127,11 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
     justify-content: space-evenly;
   }
   .footer-body {
-    padding-left: 24px;
+    margin-right: auto;
+    padding: 0px 24px;
+    &.email {
+      cursor: pointer;
+    }
     a {
       display: flex;
       align-items: center;
@@ -147,5 +158,48 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
         color: $yellow;
       }
     }
+  }
+}
+
+#footer-email-popup {
+  position: absolute;
+  top: 14px;
+  right: -96px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+  color: $dark;
+  padding: 8px 24px;
+  background-color: $bege;
+  white-space: nowrap;
+  opacity: 0;
+  div {
+    display: inline;
+    font-weight: 600;
+    width: 158px;
+    cursor: auto;
+  }
+  &.show {
+    animation: fadeInOutFooter 5s ease-in-out 0s 1 normal backwards;
+  }
+}
+
+@keyframes fadeInOutFooter {
+  0% {
+    opacity: 0;
+    transform: translateX(0px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateX(8px);
+  }
+  90% {
+    opacity: 1;
+    transform: translateX(8px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(16px);
   }
 }

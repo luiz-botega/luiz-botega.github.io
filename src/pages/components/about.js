@@ -1,6 +1,5 @@
 import React, { Component } from "react"
 import profilePic from "../../static/profilepic.png"
-import { doc } from "prettier"
 
 class About extends Component {
   constructor(props) {
@@ -98,7 +97,7 @@ class About extends Component {
               <div className="experiences-body">
                 <div>
                   <div className="experiences-title">
-                    Design Strategy Leader
+                    Design Strategy Manager
                   </div>
                   <div className="experiences-loc">
                     @ Aquarela Advances Analytics

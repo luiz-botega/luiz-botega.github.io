@@ -31,10 +31,47 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
   color: $white;
   font-weight: 400;
   text-indent: 40px;
-  margin-bottom: 40px;
-  > :not(:last-child) {
+  padding: 40px 40px 72px 40px !important;
+  margin-bottom: -40px;
+  border: 2px solid $bege;
+
+  > :nth-child(3) {
     padding-right: 40px !important;
   }
+  #process-title {
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    text-indent: 0px;
+    div {
+      margin: auto;
+      margin-top: -72px;
+      padding: 16px 40px;
+      background-color: $moss;
+      color: $bege;
+      font-family: $secondary-font;
+      font-size: 24px;
+    }
+  }
+
+  #leafsmallbege-div {
+    position: absolute;
+    right: 200px;
+    img {
+      position: absolute;
+      height: 120px;
+      transform-origin: top right;
+      &.top {
+        top: -16px;
+        transform: scaleX(-1) rotate(100deg);
+      }
+      &.bottom {
+        top: -16px;
+        transform: scaleX(-1) rotate(70deg);
+      }
+    }
+  }
+
   span {
     font-weight: 700;
     color: $dark;

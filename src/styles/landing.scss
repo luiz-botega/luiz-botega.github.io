@@ -100,11 +100,14 @@ body {
 .name-subtitle {
   font-family: $primary-font;
   color: $white;
-  font-size: 50px;
+  // font-size: 50px;
+  font-size: 39px;
   line-height: 35px;
   font-weight: 500;
-  letter-spacing: 9px;
+  // letter-spacing: 9px;
+  letter-spacing: 5px;
   z-index: 6;
+  margin-left: 2px;
 }
 
 .snippet {
@@ -132,9 +135,12 @@ body {
   transform: rotate(15deg);
   position: absolute;
   right: 5vw;
-  top: -200px;
+  top: -50px;
   :after {
     z-index: 0;
+  }
+  .landing-leaf {
+    max-height: 85vh;
   }
 }
 
@@ -146,11 +152,16 @@ body {
     display: flex;
     justify-content: space-around;
   }
+  #contact-box {
+    margin-bottom: 16px;
+  }
 }
 
 .contact-button {
   margin: 0px 8px;
-  div {
+  display: flex;
+  justify-content: center;
+  .contact-item {
     display: flex;
     width: 40px;
     height: 40px;
@@ -162,9 +173,10 @@ body {
     justify-content: center;
     transition: 0.3s;
     transition-timing-function: ease-in-out;
+    -moz-box-shadow: 0px 0px 3px rgba(256, 256, 256, 1);
+    -webkit-box-shadow: 0px 0px 3px rgba(256, 256, 256, 1);
     box-shadow: 0px 0px 3px rgba(256, 256, 256, 1);
     transition: 0.3s;
-
     cursor: pointer;
     &:hover {
       -moz-box-shadow: $shadow-small;
@@ -172,6 +184,14 @@ body {
       box-shadow: $shadow-small;
       transform: scale(1.05);
       transition: 0.3s;
+      transition-timing-function: ease-in-out;
+    }
+    &:active {
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      transform: scale(1);
+      transition: 0.1s;
       transition-timing-function: ease-in-out;
     }
     svg {
@@ -188,13 +208,42 @@ body {
   text-align: center;
   border: 2px solid $moss;
   background-color: $white;
-  border-radius: 16px;
-  padding: 32px 24px 24px 24px;
-  color: $moss;
-  font-size: 18px;
+  padding: 32px !important;
   line-height: 22px;
-  font-weight: 500;
-  font-style: italic;
+  height: 152px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1s;
+  .phrase-text {
+    color: $green;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+    animation: fadeInOutPhrase 15s ease-in-out 0s infinite normal backwards;
+  }
+  .phrase-author {
+    margin-top: 6px;
+    color: $moss;
+    font-size: 16px;
+    font-weight: 400;
+    animation: fadeInOutPhrase 15s ease-in-out 0s infinite normal forwards;
+  }
+}
+
+@keyframes fadeInOutPhrase {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .quotation {
@@ -205,4 +254,46 @@ body {
   text-shadow: 2px 0 0 $moss, -2px 0 0 $moss, 0 2px 0 $moss, 0 -2px 0 $moss,
     1px 1px $moss, -1px -1px 0 $moss, 1px -1px 0 $moss, -1px 1px 0 $moss;
   color: $white;
+  z-index: 1;
+}
+
+#landing-email-popup {
+  position: absolute;
+  top: -48px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+  color: $dark;
+  padding: 8px 24px;
+  background-color: $bege;
+  white-space: nowrap;
+  opacity: 0;
+  div {
+    display: inline;
+    font-weight: 600;
+    width: 158px;
+  }
+  &.show {
+    animation: fadeInOutVertical 5s ease-in-out 0s 1 normal backwards;
+  }
+}
+
+@keyframes fadeInOutVertical {
+  0% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(-16px);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(-16px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-32px);
+  }
 }

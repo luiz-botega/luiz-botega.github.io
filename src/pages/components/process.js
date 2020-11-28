@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import processCycle from "../../static/processcycle.png"
 import nameStrokeSmall from "../../static/namestrokesmall.png"
+import leafsmallbege from "../../static/leafsmallbege.png"
 
 class Process extends Component {
   constructor(props) {
@@ -32,14 +33,21 @@ class Process extends Component {
     let process = (
       <div id="process-div" className="row">
         <div id="process-intro" className="col-12">
+          <div id="process-title">
+            <div>Theory & Practice</div>
+          </div>
+          <div id="leafsmallbege-div">
+            <img className="leafsmallbege top" src={leafsmallbege} atl="" />
+            <img className="leafsmallbege bottom" src={leafsmallbege} atl="" />
+          </div>
           <div className="col-6">
             For me, <span>Service Design</span> is about developing experiences
-            from humans to humans. Transcending technocentric and user-only
-            perspectives, service design deals with{" "}
-            <span>humans and beyond</span>, thinking how our solutions will
-            interact and impact the lives of users, customers, service staff,
-            other stakeholders, the society around them and even the
-            environment. Seeing solutions as service imply in a{" "}
+            from humans to humans, articulating meaning to solutions.
+            Transcending technocentric and user-only perspectives, service
+            design deals with <span>humans and beyond</span>, thinking how our
+            solutions will interact and impact the lives of users, customers,
+            service staff, other stakeholders, the society around them and even
+            the environment. Seeing solutions as service imply in a{" "}
             <span>holistic</span> view of the design process and its
             interdisciplinary participants. Out perspective should be systemic
             and we have to embrace embiguity along the way, since every decision
