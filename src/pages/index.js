@@ -6,36 +6,27 @@ import About from "./components/about"
 import Process from "./components/process"
 import Portfolio from "./components/portfolio"
 import Texts from "./components/texts"
-import Smartphone from "./components/smartphone"
 
 class App extends Component {
   constructor(props) {
     super(props)
   }
   render() {
-    let index
-    if (window.innerWidth <= 800) {
-      index = (
-        <div id="smartphone-outer-div">
-          <Smartphone />
-        </div>
-      )
-    } else {
-      index = (
-        <div id="outer-div">
-          <Helmet>
-            <meta charSet="utf-8" />
-            <title>Luiz Botega</title>
-          </Helmet>
-          <Menu />
-          <Landing />
-          <About />
-          <Process />
-          <Portfolio />
-          <Texts />
-        </div>
-      )
-    }
+    let index = (
+      <div id="outer-div">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Luiz Botega</title>
+        </Helmet>
+        <Menu />
+        <Landing />
+        <About />
+        <Process />
+        <Portfolio />
+        <Texts />
+      </div>
+    )
+
     return index
   }
 }

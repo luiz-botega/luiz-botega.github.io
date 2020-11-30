@@ -138,6 +138,12 @@ class Landing extends Component {
             </div>
           </div>
         </div>
+        <div className="smartphone-under-construction-div">
+          <div className="smartphone-under-construction">
+            <span>The mobile version is under construction</span>
+            Please, access through a desktop :)
+          </div>
+        </div>
       </div>
     )
     return landing
