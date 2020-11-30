@@ -38,7 +38,7 @@ a {
 }
 
 .nav-item-box {
-  width: 56px;
+  width: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,7 +54,7 @@ a {
   }
   img {
     position: absolute;
-    width: 65px;
+    width: 54px;
     transition: 0.3s;
     transform: scaleY(0);
     transform-origin: bottom center;
@@ -72,11 +72,11 @@ a {
 }
 
 .nav-link {
-  margin: 32px 16px !important;
+  margin: 2.5vh 16px !important;
   padding: 0px !important;
   writing-mode: vertical-rl;
   transform: scale(-1);
-  font-size: 20px;
+  font-size: 16px;
   line-height: 24px;
   font-weight: 300;
   color: $green !important;

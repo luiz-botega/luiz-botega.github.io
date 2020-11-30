@@ -112,7 +112,7 @@ class Portfolio extends Component {
                 this.manageCards("design-strategy")
               }}
             >
-              Design Strategy Manager
+              Design Strategy Leader
             </div>
             <div
               id="data-scientist-button"

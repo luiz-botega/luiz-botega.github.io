@@ -97,7 +97,7 @@ class About extends Component {
               <div className="experiences-body">
                 <div>
                   <div className="experiences-title">
-                    Design Strategy Manager
+                    Design Strategy Leader
                   </div>
                   <div className="experiences-loc">
                     @ Aquarela Advances Analytics

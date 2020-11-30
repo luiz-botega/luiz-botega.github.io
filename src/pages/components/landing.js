@@ -68,7 +68,7 @@ class Landing extends Component {
           </div>
           <div className="name-written col-7">
             <div className="name-title">Luiz Botega</div>
-            <div className="name-subtitle">design & management</div>
+            <div className="name-subtitle">designer & manager</div>
 
             <div className="snippet">
               <p className="striped">

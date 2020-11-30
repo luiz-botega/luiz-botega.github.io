@@ -32,6 +32,20 @@ body {
 
 #outer-div {
   overflow-x: hidden;
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12 {
+    padding: 0px;
+  }
 }
 
 #landing-bkgr {
@@ -46,21 +60,6 @@ body {
 .row {
   margin-left: 20vw !important;
   margin-right: 15vw !important;
-}
-
-.col-1,
-.col-2,
-.col-3,
-.col-4,
-.col-5,
-.col-6,
-.col-7,
-.col-8,
-.col-9,
-.col-10,
-.col-11,
-.col-12 {
-  padding: 0px !important;
 }
 
 // landing screen
@@ -100,12 +99,10 @@ body {
 .name-subtitle {
   font-family: $primary-font;
   color: $white;
-  // font-size: 50px;
-  font-size: 39px;
+  font-size: 41px;
   line-height: 35px;
   font-weight: 500;
-  // letter-spacing: 9px;
-  letter-spacing: 5px;
+  letter-spacing: 7px;
   z-index: 6;
   margin-left: 2px;
 }
@@ -208,7 +205,6 @@ body {
   text-align: center;
   border: 2px solid $moss;
   background-color: $white;
-  padding: 32px !important;
   line-height: 22px;
   height: 152px;
   display: flex;
@@ -216,6 +212,7 @@ body {
   justify-content: center;
   transition: 1s;
   .phrase-text {
+    padding: 32px 16px 0px 16px !important;
     color: $green;
     font-size: 18px;
     font-weight: 500;
@@ -223,6 +220,7 @@ body {
     animation: fadeInOutPhrase 15s ease-in-out 0s infinite normal backwards;
   }
   .phrase-author {
+    padding: 0px 16px 32px 16px !important;
     margin-top: 6px;
     color: $moss;
     font-size: 16px;
