@@ -191,6 +191,9 @@ body {
       transition: 0.1s;
       transition-timing-function: ease-in-out;
     }
+    &:visited {
+      border: 2px solid $green;
+    }
     svg {
       width: 28px;
       height: 28px;

@@ -122,7 +122,7 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
   }
 
   .languages-div {
-    display: inline;
+    display: inline-block;
     margin-right: 24px;
     white-space: nowrap;
     text-align: end;
@@ -143,30 +143,35 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
     width: 20%;
     height: 10px;
     background-color: $green;
+    min-width: 100px;
   }
   .languages-gouge-75 {
     display: inline-block;
     width: 15%;
     height: 10px;
     background-color: $green;
+    min-width: 75px;
   }
   .languages-gouge-50 {
     display: inline-block;
     width: 10%;
     height: 10px;
     background-color: $green;
+    min-width: 50px;
   }
   .languages-gouge-50-off {
     display: inline-block;
     width: 10%;
     height: 10px;
     border: 1px solid $green;
+    min-width: 50px;
   }
   .languages-gouge-25-off {
     display: inline-block;
     width: 5%;
     height: 10px;
     border: 1px solid $green;
+    min-width: 25px;
   }
 }
 

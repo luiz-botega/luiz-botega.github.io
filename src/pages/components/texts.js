@@ -100,7 +100,7 @@ class Texts extends Component {
           </div>
         </div>
         <div id="footer-div" className="row">
-          <div className="footer-column col-5">
+          <div className="footer-column col-6">
             <div className="footer-body">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path d="M12 2a8 8 0 0 0-8 7.92c0 5.48 7.05 11.58 7.35 11.84a1 1 0 0 0 1.3 0C13 21.5 20 15.4 20 9.92A8 8 0 0 0 12 2zm0 17.65c-1.67-1.59-6-6-6-9.73a6 6 0 0 1 12 0c0 3.7-4.33 8.14-6 9.73z" />
@@ -115,7 +115,7 @@ class Texts extends Component {
               <div className="footer-text">+55 48 99971-2248</div>
             </div>
           </div>
-          <div className="footer-column col-5">
+          <div className="footer-column col-6">
             <div className="footer-body email">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path d="M19 4H5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-.67 2L12 10.75 5.67 6zM19 18H5a1 1 0 0 1-1-1V7.25l7.4 5.55a1 1 0 0 0 .6.2 1 1 0 0 0 .6-.2L20 7.25V17a1 1 0 0 1-1 1z" />

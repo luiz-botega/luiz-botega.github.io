@@ -121,7 +121,7 @@ class Menu extends Component {
     button.classList.add("selected")
     let stroke = document.querySelectorAll(menuItem + " .menuStroke")[0]
     stroke.classList.add("show")
-    stroke.setAttribute("style", "height:" + (button.offsetHeight + 40) + "px")
+    stroke.setAttribute("style", "height:" + (button.offsetHeight + 20) + "px")
   }
 
   brandScroll = () => {
@@ -246,7 +246,7 @@ class Menu extends Component {
         >
           <div className="brand-box">
             <div className="brand-title">Luiz Botega</div>
-            <div className="brand-subtitle">service designer</div>
+            <div className="brand-subtitle">designer & manager</div>
           </div>
           <div className="brand-leaf-box hide">
             <img className="brand-leaf" src={leafSmall}></img>

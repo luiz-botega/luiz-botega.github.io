@@ -54,7 +54,7 @@ a {
   }
   img {
     position: absolute;
-    width: 54px;
+    margin-bottom: -4px;
     transition: 0.3s;
     transform: scaleY(0);
     transform-origin: bottom center;
@@ -118,11 +118,11 @@ a {
     text-decoration: none;
   }
   .brand-subtitle {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 12px;
     color: $green;
-    margin-bottom: 6px;
-    letter-spacing: 3px;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
     margin-top: -6px;
   }
 }
@@ -201,6 +201,9 @@ a {
         transform: scale(1);
         transition: 0.3s;
         transition-timing-function: ease-in-out;
+      }
+      &:visited {
+        border: 2px solid $green;
       }
       svg {
         width: 28px;

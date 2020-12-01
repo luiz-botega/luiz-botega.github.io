@@ -111,11 +111,13 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
     transition: 0.5s ease-in-out 0.2s;
     opacity: 1;
     margin-bottom: 24px;
+    margin-left: calc(-100% / 24);
   }
 
   #solution-space {
     transition: 0.5s ease-in-out 0.4s;
     opacity: 1;
+    margin-left: calc(100% / 24);
   }
   .hidden {
     opacity: 0 !important;
@@ -161,6 +163,7 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
         .process-questions {
           display: block;
           max-width: 60%;
+          padding-right: 5%;
           span {
             color: $green;
             font-weight: 500;
@@ -169,7 +172,9 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
         }
         .process-tools {
           display: block;
-          max-width: 30%;
+          max-width: 40%;
+          padding-left: 5%;
+          border-left: 2px solid $green;
           span {
             color: $green;
             font-weight: 500;

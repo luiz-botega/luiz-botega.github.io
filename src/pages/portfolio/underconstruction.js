@@ -1,15 +1,15 @@
 import React, { Component } from "react"
 import MenuPortfolio from "../components/menuportfolio"
 
-class Case1 extends Component {
+class UnderConstruction extends Component {
   constructor(props) {
     super(props)
   }
   componentDidMount = () => {}
 
   render() {
-    let case1 = (
-      <div id="portfolio-page" className="row">
+    let underconstruction = (
+      <div id="underconst-div" className="row">
         <MenuPortfolio />
         <div className="back-arrow">
           <svg
@@ -20,10 +20,15 @@ class Case1 extends Component {
             <path d="M13.83 19a1 1 0 0 1-.78-.37l-4.83-6a1 1 0 0 1 0-1.27l5-6a1 1 0 0 1 1.54 1.28L10.29 12l4.32 5.36a1 1 0 0 1-.78 1.64z" />
           </svg>
         </div>
-        case1
+        <div className="underconst-bkgr col-8">
+          <div id="underconst-text" className="">
+            <span>This page is under construction</span>
+            Please, come back soon :)
+          </div>
+        </div>
       </div>
     )
-    return case1
+    return underconstruction
   }
 }
-export default Case1
+export default UnderConstruction

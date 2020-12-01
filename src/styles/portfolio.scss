@@ -115,6 +115,7 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
           color: $dark;
           opacity: 0;
           transition: 0.3s;
+          text-align: center;
         }
         img {
           max-width: 20vw;
@@ -126,6 +127,32 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
 }
 
 // under construction
+
+.underconst-bkgr {
+  background-color: $white;
+  height: 40vh;
+  margin: 30vh auto;
+  -moz-box-shadow: $shadow-big;
+  -webkit-box-shadow: $shadow-big;
+  box-shadow: $shadow-big;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  #underconst-text {
+    border: 1px solid $green;
+    padding: 16px 32px;
+    display: block;
+    text-align: center;
+    color: $dark;
+    font-weight: 300;
+    font-size: 20px;
+    span {
+      font-size: 24px;
+      font-weight: 500;
+      display: block;
+    }
+  }
+}
 
 .back-arrow {
   position: fixed;
