@@ -76,7 +76,7 @@ class Landing extends Component {
                 <span>Service/UX designer & manager</span> specialized in{" "}
                 <span>service management</span> for{" "}
                 <span>data-driven business </span> and{" "}
-                <span>digital transformation.</span>.
+                <span>digital transformation</span>.
               </p>
             </div>
           </div>
