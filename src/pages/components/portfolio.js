@@ -1,8 +1,15 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
 import leafBackground from "../../static/leafbackground.png"
-import photo1 from "../../static/portfolio/insights.png"
-import photo2 from "../../static/portfolio/workshop.png"
+import case1_0 from "../../static/portfolio/case1_0.png"
+import case2_0 from "../../static/portfolio/case2_0.png"
+import case3_0 from "../../static/portfolio/case3_0.png"
+import case4_0 from "../../static/portfolio/case4_0.png"
+import case5_0 from "../../static/portfolio/case5_0.png"
+import case6_0 from "../../static/portfolio/case6_0.png"
+import case7_0 from "../../static/portfolio/case7_0.png"
+import case8_0 from "../../static/portfolio/case8_0.png"
+import case9_0 from "../../static/portfolio/case9_0.png"
 
 class Portfolio extends Component {
   constructor(props) {
@@ -126,24 +133,25 @@ class Portfolio extends Component {
           </div>
           <div id="all-cases" className="col-9">
             <div className="case-card service-designer">
-              <Link to="/portfolio/underconstruction">
-                <img src={photo1} alt="" />
+              <Link to="/portfolio/case1">
+                <img src={case1_0} alt="" />
                 <div className="card-title ">
-                  <div>Under Construction</div>
+                  <div>Tidying up the company</div>
+                  <p>Service Designer</p>
                 </div>
               </Link>
             </div>
             <div className="case-card ux-designer ui-designer design-strategy">
               <Link to="/portfolio/underconstruction">
-                <img src={photo1} alt="" />
+                <img src={case2_0} alt="" />
                 <div className="card-title ">
                   <div>Under Construction</div>
                 </div>
               </Link>
             </div>
-            <div className="case-card service-designer scrum-master">
-              <Link to="/portfolio/underconstruction">
-                <img src={photo1} alt="" />
+            <div className="case-card ">
+              <Link to="/portfolio/underconstruction ux-designer ui-designer design-strategy data-scientist">
+                <img src={case3_0} alt="" />
                 <div className="card-title">
                   <div>Under Construction</div>
                 </div>
@@ -151,7 +159,7 @@ class Portfolio extends Component {
             </div>
             <div className="case-card scrum-master ux-designer ui-designer data-scientist">
               <Link to="/portfolio/underconstruction">
-                <img src={photo1} alt="" />
+                <img src={case4_0} alt="" />
                 <div className="card-title">
                   <div>Under Construction</div>
                 </div>
@@ -159,7 +167,7 @@ class Portfolio extends Component {
             </div>
             <div className="case-card scrum-master ux-designer design-strategy service-designer">
               <Link to="/portfolio/underconstruction">
-                <img src={photo1} alt="" />
+                <img src={case5_0} alt="" />
                 <div className="card-title">
                   <div>Under Construction</div>
                 </div>
@@ -167,15 +175,15 @@ class Portfolio extends Component {
             </div>
             <div className="case-card ui-designer">
               <Link to="/portfolio/underconstruction">
-                <img src={photo1} alt="" />
+                <img src={case6_0} alt="" />
                 <div className="card-title">
                   <div>Under Construction</div>
                 </div>
               </Link>
             </div>
-            <div className="case-card ux-designer ui-designer design-strategy data-scientist">
+            <div className="case-card service-designer scrum-master">
               <Link to="/portfolio/underconstruction">
-                <img src={photo1} alt="" />
+                <img src={case7_0} alt="" />
                 <div className="card-title">
                   <div>Under Construction</div>
                 </div>
@@ -183,7 +191,7 @@ class Portfolio extends Component {
             </div>
             <div className="case-card design-strategy design-strategy">
               <Link to="/portfolio/underconstruction">
-                <img src={photo1} alt="" />
+                <img src={case8_0} alt="" />
                 <div className="card-title">
                   <div>Under Construction</div>
                 </div>
@@ -191,7 +199,7 @@ class Portfolio extends Component {
             </div>
             <div className="case-card service-designer">
               <Link to="/portfolio/underconstruction">
-                <img src={photo1} alt="" />
+                <img src={case9_0} alt="" />
                 <div className="card-title">
                   <div>Under Construction</div>
                 </div>

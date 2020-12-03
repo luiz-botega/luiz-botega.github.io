@@ -267,3 +267,50 @@ a {
     transform: translateX(-16px);
   }
 }
+
+#contact-portfolio-div {
+  position: fixed;
+  right: 24px;
+  bottom: 48px;
+  transition-timing-function: ease-in-out;
+  #contact-fixed-box {
+    .fixed-button {
+      display: flex;
+      width: 40px;
+      height: 40px;
+      background-color: $white;
+      border: 2px solid $green;
+      border-radius: 4px;
+      margin: auto;
+      margin-top: 40px;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s;
+      cursor: pointer;
+      &:hover {
+        -moz-box-shadow: $shadow-small;
+        -webkit-box-shadow: $shadow-small;
+        box-shadow: $shadow-small;
+        transform: scale(1.05);
+        transition: 0.3s;
+        transition-timing-function: ease-in-out;
+      }
+      &:active {
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        transform: scale(1);
+        transition: 0.3s;
+        transition-timing-function: ease-in-out;
+      }
+      &:visited {
+        border: 2px solid $green;
+      }
+      svg {
+        width: 28px;
+        height: 28px;
+        fill: $green;
+      }
+    }
+  }
+}

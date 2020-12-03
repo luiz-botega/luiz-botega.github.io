@@ -19,19 +19,20 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
   0px 4px 40px 5px rgba(1, 38, 11, 0.15);
 
 body::-webkit-scrollbar {
-  display: none; /* Safari and Chrome */
+  // display: none; /* Safari and Chrome */
 }
 
 body {
   font: 100% $primary-font;
   background-color: $moss !important;
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
-  scrollbar-width: none; /* Firefox */
+  // -ms-overflow-style: none; /* Internet Explorer 10+ */
+  // scrollbar-width: none; /* Firefox */
   color: $dark;
+  overflow-x: hidden !important;
+  overflow-y: overlay;
 }
 
 #outer-div {
-  overflow-x: hidden;
   .col-1,
   .col-2,
   .col-3,
@@ -301,4 +302,30 @@ body {
 
 .smartphone-under-construction-div {
   display: none;
+}
+
+.error404-bkgr {
+  background-color: $white;
+  height: 40vh;
+  margin: 30vh auto;
+  -moz-box-shadow: $shadow-big;
+  -webkit-box-shadow: $shadow-big;
+  box-shadow: $shadow-big;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  #error404-text {
+    border: 1px solid $green;
+    padding: 16px 32px;
+    display: block;
+    text-align: center;
+    color: $dark;
+    font-weight: 300;
+    font-size: 20px;
+    span {
+      font-size: 64px;
+      font-weight: 500;
+      display: block;
+    }
+  }
 }

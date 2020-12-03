@@ -57,12 +57,16 @@ class Texts extends Component {
           href={posts[i]["link"]}
           key={"link" + i}
           target="_blank"
+          rel="noreferrer"
           className="col-4"
+          role="button"
+          tabIndex={0}
         >
           <div className="text-card" key={i}>
             <div className="text-image-div">
               <img
                 className="text-image"
+                alt=""
                 key={"img" + i}
                 src={posts[i]["image"]}
               />
@@ -82,6 +86,9 @@ class Texts extends Component {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24 "
               onClick={() => this.moveCards(-3)}
+              onKeyDown={() => this.moveCards(-3)}
+              role="button"
+              tabIndex={0}
             >
               <path d="M13.83 19a1 1 0 0 1-.78-.37l-4.83-6a1 1 0 0 1 0-1.27l5-6a1 1 0 0 1 1.54 1.28L10.29 12l4.32 5.36a1 1 0 0 1-.78 1.64z" />
             </svg>
@@ -94,6 +101,9 @@ class Texts extends Component {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               onClick={() => this.moveCards(3)}
+              onKeyDown={() => this.moveCards(3)}
+              role="button"
+              tabIndex={0}
             >
               <path d="M10 19a1 1 0 0 1-.64-.23 1 1 0 0 1-.13-1.41L13.71 12 9.39 6.63a1 1 0 0 1 .15-1.41 1 1 0 0 1 1.46.15l4.83 6a1 1 0 0 1 0 1.27l-5 6A1 1 0 0 1 10 19z" />{" "}
             </svg>
@@ -123,6 +133,9 @@ class Texts extends Component {
               <div
                 className="footer-text"
                 onClick={() => this.copyToClipboard()}
+                onKeyDown={() => this.copyToClipboard()}
+                role="button"
+                tabIndex={0}
               >
                 lfbotega@gmail.com
               </div>
@@ -134,6 +147,9 @@ class Texts extends Component {
               <a
                 href="https://www.linkedin.com/in/luiz-botega/"
                 target="_blank"
+                rel="noreferrer"
+                role="button"
+                tabIndex={0}
               >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                   <path d="M20 22h-1.67a2 2 0 0 1-2-2v-5.37a.92.92 0 0 0-.69-.93.84.84 0 0 0-.67.19.85.85 0 0 0-.3.65V20a2 2 0 0 1-2 2H11a2 2 0 0 1-2-2v-5.46a6.5 6.5 0 1 1 13 0V20a2 2 0 0 1-2 2zm-4.5-10.31a3.73 3.73 0 0 1 .47 0 2.91 2.91 0 0 1 2.36 2.9V20H20v-5.46a4.5 4.5 0 1 0-9 0V20h1.67v-5.46a2.85 2.85 0 0 1 2.83-2.85z" />
@@ -145,7 +161,13 @@ class Texts extends Component {
               </a>
             </div>
             <div className="footer-body">
-              <a href="https://medium.com/@luizbotega" target="_blank">
+              <a
+                href="https://medium.com/@luizbotega"
+                target="_blank"
+                rel="noreferrer"
+                role="button"
+                tabIndex={0}
+              >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                   <path d="M20 4H4a1 1 0 0 0-1 1v3a1 1 0 0 0 2 0V6h6v13H9a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2h-2V6h6v2a1 1 0 0 0 2 0V5a1 1 0 0 0-1-1z" />
                 </svg>

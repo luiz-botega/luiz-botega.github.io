@@ -106,7 +106,6 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
   margin-top: 40px;
   justify-content: space-between;
   flex-wrap: wrap;
-
   #problem-space {
     transition: 0.5s ease-in-out 0.2s;
     opacity: 1;
@@ -138,7 +137,7 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
       margin-top: 16px;
       font-size: 14px;
       font-weight: 300;
-      line-height: 20px;
+      line-height: 24px;
       > .process-phases {
         margin: 8px 0px 16px 16px;
         > div {

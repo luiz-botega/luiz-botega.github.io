@@ -8,9 +8,6 @@ import Portfolio from "./components/portfolio"
 import Texts from "./components/texts"
 
 class App extends Component {
-  constructor(props) {
-    super(props)
-  }
   render() {
     let index = (
       <div id="outer-div">
