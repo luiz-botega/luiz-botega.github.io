@@ -77,6 +77,15 @@ class Portfolio extends Component {
         <div id="portfolio-box" className="row">
           <div id="portfolio-menu" className="col-3">
             <div
+              id="design-strategy-button"
+              className="portfolio-menu-item"
+              onClick={() => {
+                this.manageCards("design-strategy")
+              }}
+            >
+              Design Strategy Leader
+            </div>
+            <div
               id="service-designer-button"
               className="portfolio-menu-item"
               onClick={() => {
@@ -113,15 +122,6 @@ class Portfolio extends Component {
               SCRUM Master
             </div>
             <div
-              id="design-strategy-button"
-              className="portfolio-menu-item"
-              onClick={() => {
-                this.manageCards("design-strategy")
-              }}
-            >
-              Design Strategy Leader
-            </div>
-            <div
               id="data-scientist-button"
               className="portfolio-menu-item"
               onClick={() => {
@@ -146,6 +146,9 @@ class Portfolio extends Component {
                 <img src={case2_0} alt="" />
                 <div className="card-title ">
                   <div>Under Construction</div>
+                  <p>Design Strategy Leader</p>
+                  <p>UX Designer</p>
+                  <p>UI Designer</p>
                 </div>
               </Link>
             </div>
@@ -154,6 +157,10 @@ class Portfolio extends Component {
                 <img src={case3_0} alt="" />
                 <div className="card-title">
                   <div>Under Construction</div>
+                  <p>Design Strategy Leader</p>
+                  <p>UX Designer</p>
+                  <p>UI Designer</p>
+                  <p>Data Scientist</p>
                 </div>
               </Link>
             </div>
@@ -162,6 +169,10 @@ class Portfolio extends Component {
                 <img src={case4_0} alt="" />
                 <div className="card-title">
                   <div>Under Construction</div>
+                  <p>UX Designer</p>
+                  <p>UI Designer</p>
+                  <p>SCRUM Master</p>
+                  <p>Data Scientist</p>
                 </div>
               </Link>
             </div>
@@ -170,6 +181,10 @@ class Portfolio extends Component {
                 <img src={case5_0} alt="" />
                 <div className="card-title">
                   <div>Under Construction</div>
+                  <p>Design Strategy Leader</p>
+                  <p>Service Designer</p>
+                  <p>UX Designer</p>
+                  <p>SCRUM Master</p>
                 </div>
               </Link>
             </div>
@@ -178,6 +193,7 @@ class Portfolio extends Component {
                 <img src={case6_0} alt="" />
                 <div className="card-title">
                   <div>Under Construction</div>
+                  <p>UI Designer</p>
                 </div>
               </Link>
             </div>
@@ -186,14 +202,18 @@ class Portfolio extends Component {
                 <img src={case7_0} alt="" />
                 <div className="card-title">
                   <div>Under Construction</div>
+                  <p>Service Designer</p>
+                  <p>SCRUM Master</p>
                 </div>
               </Link>
             </div>
-            <div className="case-card design-strategy design-strategy">
+            <div className="case-card design-strategy service-designer">
               <Link to="/portfolio/underconstruction">
                 <img src={case8_0} alt="" />
                 <div className="card-title">
                   <div>Under Construction</div>
+                  <p>Design Strategy Leader</p>
+                  <p>Service Designer</p>
                 </div>
               </Link>
             </div>
@@ -202,6 +222,7 @@ class Portfolio extends Component {
                 <img src={case9_0} alt="" />
                 <div className="card-title">
                   <div>Under Construction</div>
+                  <p>Service Designer</p>
                 </div>
               </Link>
             </div>
