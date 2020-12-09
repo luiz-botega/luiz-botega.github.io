@@ -152,8 +152,8 @@ class Portfolio extends Component {
                 </div>
               </Link>
             </div>
-            <div className="case-card ">
-              <Link to="/portfolio/underconstruction ux-designer ui-designer design-strategy data-scientist">
+            <div className="case-card ux-designer ui-designer design-strategy data-scientist">
+              <Link to="/portfolio/underconstruction">
                 <img src={case3_0} alt="" />
                 <div className="card-title">
                   <div>Under Construction</div>
@@ -198,7 +198,7 @@ class Portfolio extends Component {
               </Link>
             </div>
             <div className="case-card service-designer scrum-master">
-              <Link to="/portfolio/underconstruction">
+              <Link to="/portfolio/case7">
                 <img src={case7_0} alt="" />
                 <div className="card-title">
                   <div>Under Construction</div>

@@ -190,8 +190,8 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
   }
   #NDA {
     margin-top: 8px;
-    font-size: 12px;
-    max-width: 450px;
+    font-size: 14px;
+    max-width: 500px;
   }
 }
 
@@ -209,6 +209,7 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
   box-shadow: $shadow-big;
   padding: 32px 48px 32px 48px !important;
   .case-text {
+    color: $dark;
     .stroke {
       margin-left: -40px;
       margin-top: 0px;
@@ -229,7 +230,10 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
     .section-text {
       font-size: 13px;
       line-height: 24px;
-      font-weight: 400;
+      font-weight: 300;
+      span {
+        font-weight: 500;
+      }
     }
     &#brief,
     &#process1,
@@ -240,6 +244,7 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
   }
 
   .case-img {
+    text-align: center;
     img {
       max-height: 100%;
       max-width: 100%;
@@ -254,23 +259,66 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
       margin-bottom: 8px;
       text-align: center;
     }
-    &#case1-1 {
-      display: flex;
-      justify-content: center;
-      > img {
-        position: absolute;
-      }
+  }
+}
+
+.case1 {
+  #case1-1 {
+    display: flex;
+    justify-content: center;
+    > img {
+      position: absolute;
     }
-    &#case1-2 {
-      margin-bottom: 24px;
+  }
+  #case1-2 {
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 24px;
+  }
+  #case1-3 {
+    margin: 0px auto 40px auto;
+  }
+  #case1-5,
+  #case1-6 {
+    padding: 0px 16px 40px 16px;
+  }
+}
+
+.case7 {
+  #process1 {
+    margin-bottom: 0px !important;
+  }
+  #process4 .section-text {
+    margin-bottom: 40px;
+  }
+  #case7-0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > img {
+      max-width: 90%;
+      max-height: 90%;
     }
-    &#case1-3 {
-      margin: 0px auto 40px auto;
+  }
+  #case7-1 {
+    margin: 0px auto 40px auto;
+  }
+  #case7-2 {
+    margin: auto 0px auto 0px;
+    padding-bottom: 32px;
+  }
+  #case7-3 {
+    margin-top: auto;
+    margin-bottom: auto;
+    img {
+      max-width: 90%;
     }
-    &#case1-5,
-    &#case1-6 {
-      padding: 0px 16px 40px 16px;
-    }
+  }
+  #case7-4 {
+    margin-bottom: 40px;
+  }
+  #case7-5 {
+    text-align: center;
   }
 }
 

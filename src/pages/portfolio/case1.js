@@ -13,7 +13,7 @@ class Case1 extends Component {
 
   render() {
     let case1 = (
-      <div id="case-div" className="row">
+      <div id="case-div" className="case1 row">
         <MenuPortfolio />
         <div className="back-arrow">
           <svg
@@ -40,11 +40,11 @@ class Case1 extends Component {
             <div className="section-text">
               Driven by a need to differentiate themselves in the competitive
               market, partners from ReferênciaSC sought out to HOMA Service
-              Design (where I was working at the time), looking for a 1-week
-              session of Design Sprint. The furniture company based in
-              Florianópolis, Brazil, wanted to strategically become a reference
-              in Startup and Innovation related furniture, but were struggling
-              to put their plans in action.
+              Design (where I was working at the time), looking for a{" "}
+              <span>1-week session of Design Sprint</span>. The furniture
+              company based in Florianópolis, Brazil, wanted to strategically
+              become a reference in Startup and Innovation related furniture,
+              but were struggling to put their plans in action.
             </div>
           </div>
           <div id="case1-1" className="case-img col-5">
@@ -56,13 +56,14 @@ class Case1 extends Component {
             <div className="section-text">
               Our work started one week before the Design Sprint, when I and the
               two co-founders of HOMA joined our heads to plan the whole process
-              and assign roles and tasks. As main facilitator of the Sprint, I
-              was responsible for the preliminary research about the business
-              furniture market, including benchmark and hidden customer. We
-              planned the week ahead of us adapting the original Design Sprint
-              process by Jake Knapp, with a good time for knowing the
-              participants and understanding the problems’ roots. Our end-goal
-              was to deliver a Commercial Playbook with main solutions
+              and assign roles and tasks. As{" "}
+              <span>main facilitator of the Sprint</span>, I was responsible for
+              the preliminary research about the business furniture market,
+              including benchmark and hidden customer. We planned the week ahead
+              of us adapting the original Design Sprint process by Jake Knapp,
+              with a good time for knowing the participants and understanding
+              the problems’ roots. Our end-goal was to{" "}
+              <span>deliver a Commercial Playbook</span> with main solutions
               prototyped.
             </div>
           </div>
@@ -72,35 +73,40 @@ class Case1 extends Component {
           <div className="col-7">
             <div id="process2" className="case-text">
               <div className="section-text">
-                All things set, on the first day we discovered that the problems
-                had deeper roots. Their sales process and organizational
-                structure were unorganized, with same-job employees performing
-                different roles and managers passing on “unwanted tasks” to
-                lower ranks. To reach success, we needed to pivot the whole
-                process: first we had to tidy up the company.
+                All things set, on the first day we discovered that{" "}
+                <span>the problems had deeper roots</span>. Their sales process
+                and organizational structure were unorganized, with same-job
+                employees performing different roles and managers passing on
+                “unwanted tasks” to lower ranks. To reach success, we needed to
+                pivot the whole process:{" "}
+                <span>first we had to tidy up the company</span>.
                 <br />
                 <br />
                 At the end of the first day, after aligning with the clients, we
-                sat to re-plan the process, adapting it from a commercial
-                mindset to an internal processes focus. Though the main
-                structure of the Sprint stayed the same, our outcomes changed
-                slightly, adding a Human Resources Plan and a validated Service
-                Blueprint with whole sales-processes restructuring. In the new
-                flow, we paid particular atention to the experience of the
-                staff, focusing on understanding their responsibilities and
-                actual tasks, and from that map a better process for all people
-                involved.
+                sat to <span>re-plan the process</span>, adapting it from a
+                commercial mindset to an internal processes focus. Though the
+                main structure of the Sprint stayed the same, our outcomes
+                changed slightly, adding a <span>Human Resources Plan</span> and
+                a validated
+                <span>
+                  Service Blueprint with whole sales-processes restructuring
+                </span>
+                . In the new flow, we paid particular atention to the experience
+                of the staff, focusing on understanding their responsibilities
+                and actual tasks, and from that map a better process for all
+                people involved.
                 <br />
                 <br />
                 After that the re-planned Sprint went on smoothly, with the team
                 deeply committed. Aside from the facilitation, I was responsible
-                for co-conducting users interviews and shadowing sessions with
-                the collaborators, and documenting the process, always in
-                collaboration with at least one of HOMA’s co-founders. On friday
-                we did a final validation session of the developed service
-                solution with two final clients, which was a great test-run for
-                the team and provided valuable insight for the actual execution
-                of what we had so thoroughly envisioned.
+                for co-conducting{" "}
+                <span>users interviews and shadowing sessions</span> with the
+                collaborators, and <span>documenting the process</span>, always
+                in collaboration with at least one of HOMA’s co-founders. On
+                friday we did a final validation session of the developed
+                service with two clients, which was a great test-run for the
+                team and provided valuable empirical insights for what we had so
+                thoroughly envisioned.
               </div>
             </div>
           </div>
@@ -112,13 +118,14 @@ class Case1 extends Component {
             <img src={nameStrokeSmall} className="stroke" alt="" />
             <div className="section-header">Outcomes</div>
             <div className="section-text">
-              We ended the week up with a solid and validated Service Blueprint,
-              along with a Human Resources Plan and further Insights. Even
+              We ended the week up with a{" "}
+              <span>solid and validated Service Blueprint</span>, along with a{" "}
+              <span>Human Resources Plan</span> and further Insights. Even
               though the scope changed, we were able to collect enough
-              understanding to provide a Commercial Playbook and a Marketing
-              Strategy to differentiate ReferênciaSC from other competitors in
-              the Startup furniture business, remaining true to the original
-              objectives.
+              understanding to provide a{" "}
+              <span>Commercial Playbook and a Marketing Strategy</span> to
+              differentiate ReferênciaSC from other competitors in the Startup
+              furniture business, remaining true to the original objectives.
             </div>
           </div>
           <div id="case1-5" className="case-img col-6">
