@@ -132,16 +132,16 @@ class Portfolio extends Component {
             </div>
           </div>
           <div id="all-cases" className="col-9">
-            <div className="case-card service-designer">
+            <div className="case-card col-4 service-designer">
               <Link to="/portfolio/case1">
                 <img src={case1_0} alt="" />
                 <div className="card-title ">
-                  <div>Tidying up the company</div>
+                  <div>ReferenciaSC</div>
                   <p>Service Designer</p>
                 </div>
               </Link>
             </div>
-            <div className="case-card ux-designer ui-designer design-strategy">
+            <div className="case-card col-4 ux-designer ui-designer design-strategy">
               <Link to="/portfolio/underconstruction">
                 <img src={case2_0} alt="" />
                 <div className="card-title ">
@@ -152,7 +152,7 @@ class Portfolio extends Component {
                 </div>
               </Link>
             </div>
-            <div className="case-card ux-designer ui-designer design-strategy data-scientist">
+            <div className="case-card col-4 ux-designer ui-designer design-strategy data-scientist">
               <Link to="/portfolio/underconstruction">
                 <img src={case3_0} alt="" />
                 <div className="card-title">
@@ -164,7 +164,7 @@ class Portfolio extends Component {
                 </div>
               </Link>
             </div>
-            <div className="case-card scrum-master ux-designer ui-designer data-scientist">
+            <div className="case-card col-4 scrum-master ux-designer ui-designer data-scientist">
               <Link to="/portfolio/underconstruction">
                 <img src={case4_0} alt="" />
                 <div className="card-title">
@@ -176,7 +176,7 @@ class Portfolio extends Component {
                 </div>
               </Link>
             </div>
-            <div className="case-card scrum-master ux-designer design-strategy service-designer">
+            <div className="case-card col-4 scrum-master ux-designer design-strategy service-designer">
               <Link to="/portfolio/underconstruction">
                 <img src={case5_0} alt="" />
                 <div className="card-title">
@@ -188,26 +188,26 @@ class Portfolio extends Component {
                 </div>
               </Link>
             </div>
-            <div className="case-card ui-designer">
-              <Link to="/portfolio/underconstruction">
+            <div className="case-card col-4 ui-designer">
+              <Link to="/portfolio/case6">
                 <img src={case6_0} alt="" />
                 <div className="card-title">
-                  <div>Under Construction</div>
+                  <div>luizbotega.com</div>
                   <p>UI Designer</p>
                 </div>
               </Link>
             </div>
-            <div className="case-card service-designer scrum-master">
+            <div className="case-card col-4 service-designer scrum-master">
               <Link to="/portfolio/case7">
                 <img src={case7_0} alt="" />
                 <div className="card-title">
-                  <div>Under Construction</div>
+                  <div>4.0 Maintenance</div>
                   <p>Service Designer</p>
                   <p>SCRUM Master</p>
                 </div>
               </Link>
             </div>
-            <div className="case-card design-strategy service-designer">
+            <div className="case-card col-4 design-strategy service-designer">
               <Link to="/portfolio/underconstruction">
                 <img src={case8_0} alt="" />
                 <div className="card-title">
@@ -217,7 +217,7 @@ class Portfolio extends Component {
                 </div>
               </Link>
             </div>
-            <div className="case-card service-designer">
+            <div className="case-card col-4 service-designer">
               <Link to="/portfolio/underconstruction">
                 <img src={case9_0} alt="" />
                 <div className="card-title">

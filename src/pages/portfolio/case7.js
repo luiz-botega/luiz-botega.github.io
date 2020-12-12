@@ -25,8 +25,8 @@ class Case7 extends Component {
           </svg>
         </div>
         <div id="case-header" className="row">
-          <div id="case-tittle">Virtual Service for Virtual Solution*</div>
-          <div id="case-subtittle">
+          <div id="case-title">4.0 Maintenance*</div>
+          <div id="case-subtitle">
             Merging design and tech for maintenance innovation
           </div>
           <div id="NDA">
@@ -34,16 +34,16 @@ class Case7 extends Component {
             anonymized to protect clients' information and sensitive content.
           </div>
         </div>
-        <div id="case-body" className="case-bkgr row">
+        <div id="case-body" className="case-bkgr row col-12">
           <div id="brief" className="case-text col-7">
             <img src={nameStrokeSmall} className="stroke" alt="" />
             <div className="section-header">Brief</div>
             <div className="section-text">
               A traditional maintenance company, looking for providing better
-              solutions to their clients, partnered up with Aquarela to develop
-              a state-of-the-art maintenance system. Allying AI and their
-              decades of experience, the objective was to develop together a
-              partnership Product using{" "}
+              solutions to their clients, partnered up with the company I work
+              for at the time to develop a state-of-the-art maintenance system.
+              Allying AI and their decades of experience, the objective was to
+              develop together a partnership Product using{" "}
               <span>Machine Learning models to detect failure</span> in their
               clients' equipments way before it would happen, acting
               preventively, avoiding costly manufacturing interruptions and
@@ -75,12 +75,11 @@ class Case7 extends Component {
               <div className="section-text">
                 It all started a few days before the project’s kick-off, when I
                 (as SCRUM Master), the Product Owner and the Head of Operations
-                of Aquarela joined efforts in planning the first days. It was a
-                particular challenge to plan the <span>virtual kick-off</span>,
-                being this the first full-online project we worked at the
-                company. Our plans involved a{" "}
-                <span>power-through “week and a half”</span> with two lines of
-                action:
+                joined efforts in planning the first days. It was a particular
+                challenge to plan the <span>virtual kick-off</span>, being this
+                the first full-online project we worked at the company. Our
+                plans involved a <span>power-through “week and a half”</span>{" "}
+                with two lines of action:
                 <ul>
                   <li>
                     <span>User-centered</span>, guided by me, to promote

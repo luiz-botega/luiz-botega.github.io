@@ -25,12 +25,12 @@ class Case1 extends Component {
           </svg>
         </div>
         <div id="case-header" className="row">
-          <div id="case-tittle">Tidying up the company</div>
-          <div id="case-subtittle">
+          <div id="case-title">ReferenciaSC</div>
+          <div id="case-subtitle">
             From human resources to end-to-end sales process
           </div>
         </div>
-        <div id="case-body" className="case-bkgr row">
+        <div id="case-body" className="case-bkgr row col-12">
           <div id="case1-2" className="case-img col-12">
             <img src={case1_2} alt="" />
           </div>
@@ -114,7 +114,7 @@ class Case1 extends Component {
             <div className="subsection-header">Tools used</div>
             <img src={case1_4} alt="" />
           </div>
-          <div id="process3" className="case-text col-12">
+          <div id="outcomes" className="case-text col-12">
             <img src={nameStrokeSmall} className="stroke" alt="" />
             <div className="section-header">Outcomes</div>
             <div className="section-text">
