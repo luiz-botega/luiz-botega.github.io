@@ -69,7 +69,7 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
     display: flex;
     flex-wrap: wrap;
     max-height: 90vh;
-    overflow: auto;
+    overflow: hidden;
     padding: 24px;
     .case-card {
       position: relative;
@@ -237,6 +237,11 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
       span {
         font-weight: 500;
       }
+      a {
+        font-weight: 500;
+        color: $dark;
+        text-decoration: underline;
+      }
     }
     &#brief,
     &#process1,
@@ -358,6 +363,46 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
   }
 }
 
+.case9 {
+  .section-text > div {
+    margin-bottom: 24px;
+  }
+  #case9-0 {
+    float: right;
+    margin-left: 16px;
+    img {
+      max-height: 250px;
+    }
+  }
+  #case9-1 {
+    float: left;
+    margin: 8px 16px 8px 0px;
+    img {
+      max-height: 250px;
+    }
+  }
+  #case9-2 {
+    float: left;
+    margin-top: 8px;
+  }
+  #case9-3 {
+    float: right;
+    margin: -16px 0px 8px 16px;
+    img {
+      max-height: 350px;
+    }
+  }
+  #case9-4 {
+    float: right;
+    max-width: 40%;
+    margin-right: -80px;
+    margin-left: 16px;
+    -moz-box-shadow: $shadow-small;
+    -webkit-box-shadow: $shadow-small;
+    box-shadow: $shadow-small;
+  }
+}
+
 .back-arrow {
   position: fixed;
   display: flex;
@@ -368,6 +413,7 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
   flex: 0 0 8.333333%;
   max-width: 8.333333%;
   margin-left: calc(-100% / 8);
+  z-index: 10;
   svg {
     display: flex;
     justify-content: center;

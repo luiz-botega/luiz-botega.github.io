@@ -43,21 +43,23 @@ class Case6 extends Component {
               <ul>
                 <li>
                   Firstly, the client (in this case me) defined two main
-                  requirements: the site should reflect me as a person, not only
-                  my professional side, opening windows for people to talk to
-                  me; and it should come with my roots, since I was born in
+                  requirements: the site should{" "}
+                  <span>reflect me as a person</span>, not only my professional
+                  side, opening windows for people to talk to me; and it should
+                  come with my <span>Brazilian</span> roots, since I was born in
                   Brazil;
                 </li>
                 <li>
                   Secondly, the designer (also me) should go through the main
-                  steps of the UI process, from lo-fi to hi-fi prototyping,
-                  exploring the solution and its potentialities and going for an
-                  established final concept before implementing;
+                  steps of the UI process, from <span>lo-fi to hi-fi</span>{" "}
+                  prototyping, exploring the solution and its potentialities and
+                  going for an established final concept before implementing;
                 </li>
                 <li>
                   Last but not least, the Front-End dev (well… me) should
-                  develop it using Javascript, HTML and CSS, implementing and
-                  deploying a fully responsive webpage (for desktop at first).
+                  develop it using <span>Javascript, React, HTML and CSS</span>,
+                  implementing and deploying a fully responsive webpage (for
+                  desktop at first).
                 </li>
               </ul>
             </div>
@@ -69,16 +71,24 @@ class Case6 extends Component {
           <div id="process1" className="case-text col-12">
             <div className="section-text">
               The requirements set, the process itself was pretty
-              straightforward. I used Figma to design the lo-fi frame of the
-              main page, defining 5 main sections: a landing screen; a section
-              about me (including a brief description of my path so far and my
-              values); another on my process (exploring the basic framework and
-              tools I often use); a fourth part with my portfolio; and a last
-              with my texts (linked to my Medium) and a footer with contacts.
+              straightforward. I used <span>Figma</span> to design the lo-fi
+              frame of the main page, defining 5 main sections: a landing
+              screen; a section about me (including a brief description of my
+              path so far and my values); another on my process (exploring the
+              basic framework and tools I often use); a fourth part with my
+              portfolio; and a last with my texts (linked to my{" "}
+              <a
+                href="https://luizbotega.medium.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Medium
+              </a>
+              ) and a footer with contacts.
             </div>
           </div>
           <div id="case6-1" className="case-img col-12">
-            <a href={case6_1_big} target="_blank">
+            <a href={case6_1_big} target="_blank" rel="noreferrer">
               <img src={case6_1} alt="" />
             </a>
           </div>
@@ -87,28 +97,28 @@ class Case6 extends Component {
               <img src={case6_2} alt="" />
             </div>
             <div className="section-text">
-              I opted to do a multi-page portfolio, which would imply more
-              scalability, helping to organize and hierarchize the content.
-              Since the client's (mine) desire is for this page to be a
-              communication medium, I also decided to add contact means as fixed
-              components in the lower-right corner, with passerbys having links
-              to contact me at all times. Structurally, following best practices
-              of UI design for responsivity, I framed the page in 12 columns
-              with 8px base grid
+              I opted to do a <span>multi-page portfolio</span>, which would
+              imply more scalability, helping to organize and hierarchize the
+              content. Since the client's (mine) desire is for this page to be a{" "}
+              <span>communication medium</span>, I also decided to add contact
+              means as fixed components in the lower-right corner, with
+              passerbys having links to contact me at all times. Structurally,
+              following best practices of UI design for responsivity, I framed
+              the page in 12 columns with 8px base grid.
               <br />
               <br />
               The process to evolve the lo-fi prototype to hi-fi started with a
               simple leaf. Being one of my favorite plants and a native
-              South-American foliage, the whole visual concept was based on a
-              "Costela de Adão" (Swiss Cheese Plant or *Monstera deliciosa*),
-              leaf that stamps the page's lading screen. It helped me set the
-              color pallet (using green and yellow as a very Brazilian
-              combination for forests, land and gold) and adorns several places
-              throughout the site.
+              South-American foliage, the whole visual concept was based on a{" "}
+              <span>Costela de Adão</span> (Swiss Cheese Plant or{" "}
+              <em>Monstera deliciosa</em>), leaf that stamps the page's lading
+              screen. It helped me set the color pallet (using green and yellow
+              as a very Brazilian combination for forests, land and gold) and
+              adorns several places throughout the site.
             </div>
           </div>
           <div id="case6-3" className="case-img col-12">
-            <a href={case6_3_big} target="_blank">
+            <a href={case6_3_big} target="_blank" rel="noreferrer">
               <img src={case6_3} alt="" />
             </a>
           </div>
@@ -116,10 +126,10 @@ class Case6 extends Component {
             <div className="section-text">
               The UI Design set, I changed my thinking-hat and started Front-End
               Development in VSCode. I implemented the whole page using
-              Javascript and React, using GatsbyJS framework to allow
-              multiple-page links (since React is single-page optimized). The
-              need for multiple-page structure was also established to allow me
-              a better monitoring of the application's user-flow by adding
+              Javascript and React, using <span>GatsbyJS framework</span> to
+              allow multiple-page links (since React is single-page optimized).
+              The need for multiple-page structure was also established to allow
+              me a better monitoring of the application's user-flow by adding
               Google Analytics. For deployment I used the github.io
               infrastructure, adding a custom domain at the end.
             </div>
@@ -133,17 +143,20 @@ class Case6 extends Component {
 
             <div className="section-text">
               Since you are here, reading this line, I can assure you that the
-              whole process was successful and the page is fulfilling its
+              whole process was successful and the page is fulfilling my
               intentions. Though still only desktop friendly, the page was
               quickly put on air so that I can incrementally improve it
               overtime. New texts and cases for my portfolio are constantly
               added, and the contents of the pages also reflect my personal and
-              professional development. Of course, to validate the page, I
-              distributed this page for several friends to collect their
-              impressions, as well as to some Human Resources experts for more
-              specialized insights. After all, I am not the final user. As
-              client, designer and developer, all I can do is congratulate
-              myself.
+              professional development. Of course, to{" "}
+              <span>validate the page</span>, I distributed this page for
+              several friends to collect their impressions, as well as to some
+              Human Resources experts for more specialized insights. After all,
+              I am not the final user.{" "}
+              <span>
+                As client, designer and developer, all I can do is congratulate
+                myself.
+              </span>
             </div>
           </div>
         </div>
