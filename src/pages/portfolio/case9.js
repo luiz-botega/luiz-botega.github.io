@@ -124,7 +124,7 @@ class Case9 extends Component {
                 <div className="subsection-header">Personas</div>
                 <img src={case9_2} alt="" />
               </div>
-              <div>
+              <div style={{ clear: "both" }}>
                 We then gathered all this info into an affinity diagram, drawing
                 relationships among them and turning all into a Mind Map with
                 three main themes: comfort, events options plus gastronomy, and

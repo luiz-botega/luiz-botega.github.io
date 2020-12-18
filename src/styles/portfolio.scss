@@ -382,7 +382,7 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
     }
   }
   #case9-2 {
-    float: left;
+    float: right;
     margin-top: 8px;
   }
   #case9-3 {
@@ -395,8 +395,7 @@ $shadow-big: 0px 4px 20px rgba(1, 38, 11, 0.25),
   #case9-4 {
     float: right;
     max-width: 40%;
-    margin-right: -80px;
-    margin-left: 16px;
+    margin: -16px -80px 16px 16px;
     -moz-box-shadow: $shadow-small;
     -webkit-box-shadow: $shadow-small;
     box-shadow: $shadow-small;
