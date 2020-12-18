@@ -208,10 +208,10 @@ class Portfolio extends Component {
               </Link>
             </div>
             <div className="case-card design-strategy service-designer">
-              <Link to="/portfolio/underconstruction">
+              <Link to="/portfolio/case8">
                 <img src={case8_0} alt="" />
                 <div className="card-title">
-                  <div>Under Construction</div>
+                  <div>Designing Design</div>
                   <p>Design Strategy Leader</p>
                   <p>Service Designer</p>
                 </div>
