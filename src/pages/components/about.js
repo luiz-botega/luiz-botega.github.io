@@ -13,8 +13,8 @@ class About extends Component {
         <div className="row about-bkgr">
           <div id="about-text" className="col-8">
             <div className="about-intro">
-              Hi there! My name is <span>Luiz</span> and I work as a{" "}
-              <span>designer</span>. Great to see you here!
+              Hi there! My name is <span>Luiz</span> and I work as an{" "}
+              <span>innovation consultant</span>. Great to see you here!
             </div>
             <div className="about-body">
               <p>
